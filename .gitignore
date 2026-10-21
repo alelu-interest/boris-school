@@ -1,0 +1,5 @@
+.DS_Store
+# gli zip per Claude.ai si allegano alle release, non si versionano
+dist/
+# cartelle di lavoro delle prove delle skill
+*-workspace/

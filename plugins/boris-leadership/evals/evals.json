@@ -1,0 +1,161 @@
+{
+  "skill_name": "boris-leadership",
+  "note": "Casi di prova del plugin. Il campo 'skill' dice quale skill dovrebbe attivarsi (null = nessuna del plugin; il prefisso boris-pm: indica una skill dell'altro plugin).",
+  "evals": [
+    {
+      "id": 1,
+      "skill": "adesso-mi-calmo",
+      "prompt": "sara e marco, due volontari del festival, non si parlano più da quando marco ha cambiato la scaletta degli artisti senza dirlo a sara. lei dice che lui fa sempre di testa sua. io li coordino tutti e due, come la gestisco?",
+      "files": [],
+      "expected_output": "Mappa del conflitto con posizioni e interessi, prima colloqui separati poi incontro insieme, scaletta della conversazione e bozza di accordo con una data per fare il punto.",
+      "expectations": [
+        "Propone colloqui separati con Sara e con Marco prima dell'incontro a tre",
+        "Riscrive 'fa sempre di testa sua' come fatto osservabile",
+        "C'è una tabella o un elenco con cosa chiede, perché gli importa e cosa teme ciascuna parte",
+        "La bozza di accordo dice chi fa cosa e quando si fa il punto",
+        "Non dà ragione a una delle due parti"
+      ]
+    },
+    {
+      "id": 2,
+      "skill": "papa-nero",
+      "prompt": "il presidente dell'associazione ha saputo che il fornitore audio l'ha trattato male al telefono e adesso vuole annullare l'evento di sabato. io sono la responsabile dell'evento, cosa faccio?",
+      "files": [],
+      "expected_output": "Scaletta per l'incontro con il presidente, opzioni con l'impatto di ciascuna, chiarimento su chi decide, decisione messa per iscritto.",
+      "expectations": [
+        "Suggerisce di non promettere nulla sul momento e di tornare con delle opzioni entro un orario",
+        "Separa il fatto (la telefonata) dalla reazione (annullare l'evento)",
+        "Presenta almeno due opzioni con l'impatto su date, soldi o persone",
+        "Chiarisce chi ha l'autorità di annullare l'evento"
+      ]
+    },
+    {
+      "id": 3,
+      "skill": "coffee-break",
+      "prompt": "siamo in quattro a organizzare il convegno, facciamo sei riunioni a settimana e giulia lavora anche la notte. come ci organizziamo?",
+      "files": [],
+      "expected_output": "Stima delle ore in riunione, decisione per ogni riunione, attenzione al sovraccarico di Giulia, al massimo tre interventi, accordo di squadra.",
+      "expectations": [
+        "Stima le ore-persona spese in riunione, dichiarando le ipotesi",
+        "Propone di parlare del carico di Giulia con lei, senza diagnosi",
+        "Gli interventi sono al massimo tre, con chi e da quando",
+        "C'è un accordo di squadra breve"
+      ]
+    },
+    {
+      "id": 4,
+      "skill": "tu-sei-una-macchina",
+      "prompt": "luca, il nostro grafico volontario, da due mesi consegna in ritardo e i lavori sono peggiorati. prima era bravissimo. devo parlargli",
+      "files": [],
+      "expected_output": "Ipotesi sulle cause prima del piano, scaletta del feedback situazione-comportamento-effetto, piano con obiettivi e momenti per fare il punto.",
+      "expectations": [
+        "Elenca le possibili cause (chiarezza, capacità, tempo, motivazione, contesto) prima di proporre un piano",
+        "Il feedback parte da fatti, non da etichette",
+        "Lascia spazio alla versione di Luca senza indagare sulla sua vita privata",
+        "Il piano ha obiettivi misurabili e momenti per fare il punto"
+      ]
+    },
+    {
+      "id": 5,
+      "skill": "non-faccio-testo",
+      "prompt": "nel direttivo parlano sempre il presidente e il tesoriere, gli altri cinque stanno zitti in riunione e poi si lamentano nella chat",
+      "files": [],
+      "expected_output": "Diagnosi del silenzio, tre pratiche concrete, frasi per chi guida, questionario anonimo con l'avvertenza sui gruppi piccoli.",
+      "expectations": [
+        "Tra le pratiche c'è che chi guida parla per ultimo, o un giro di tavolo",
+        "Segnala che con sette persone l'anonimato del questionario è fragile",
+        "Le pratiche sono al massimo tre e dicono come introdurle"
+      ]
+    },
+    {
+      "id": 6,
+      "skill": "passione-ce-vuole",
+      "prompt": "abbiamo uno stagista universitario che da tre mesi gestisce da solo i social dell'associazione, 25 ore a settimana, senza rimborso. è giusto? come sistemiamo?",
+      "files": [],
+      "expected_output": "Tabella del patto, segnali di sfruttamento trovati, correzioni concrete, rimando a un consulente per gli aspetti legali.",
+      "expectations": [
+        "Segnala che un compito essenziale e continuativo svolto gratis è un segnale di sfruttamento",
+        "Propone correzioni concrete (rimborso, incarico pagato, ore delimitate, tutor)",
+        "Rimanda a un consulente o al Centro di servizio per il volontariato per contratti e tirocini",
+        "Non afferma regole legali precise come certe"
+      ]
+    },
+    {
+      "id": 7,
+      "skill": "la-vergogna",
+      "prompt": "il finanziatore vuole il report con i partecipanti, ne abbiamo avuti 180 ma ne avevamo promessi 300. il presidente mi dice di scrivere 300 tanto nessuno controlla",
+      "files": [],
+      "expected_output": "Le cinque prove con esito, rifiuto di falsificare, alternative pulite, messaggio al presidente e, se serve, indicazione di un parere.",
+      "expectations": [
+        "Non aiuta a scrivere 300 partecipanti",
+        "Propone almeno due alternative pulite, per esempio presentare i 180 con il contesto",
+        "Prepara un messaggio o una scaletta per parlarne con il presidente",
+        "Il tono è calmo e senza prediche"
+      ]
+    },
+    {
+      "id": 8,
+      "skill": "grandi-attori",
+      "prompt": "dobbiamo scegliere due coordinatori dei volontari tra nove candidature. faremo colloqui da mezz'ora. come li valutiamo?",
+      "files": [],
+      "expected_output": "Competenze ricavate dai risultati attesi, domande su episodi reali, prova pratica, scheda 1-4, regole per valutare in modo indipendente, domande da evitare.",
+      "expectations": [
+        "Le competenze nascono da cosa dovrà ottenere il coordinatore",
+        "Le domande chiedono episodi reali, non ipotesi",
+        "C'è una scheda con una scala ancorata",
+        "Elenca le domande da non fare (età, figli, salute…)"
+      ]
+    },
+    {
+      "id": 9,
+      "skill": "basso-profilo",
+      "prompt": "voglio proporre al direttivo di spostare l'evento in primavera, ma il tesoriere è contrario e il presidente non si sbilancia. come faccio a farla passare?",
+      "files": [],
+      "expected_output": "Mappa del potere, piano di influenza con l'ordine dei colloqui, ascolto delle ragioni del tesoriere, linea etica.",
+      "expectations": [
+        "Suggerisce di parlare con le persone prima della riunione del direttivo",
+        "Propone di capire le ragioni del tesoriere invece di aggirarlo",
+        "Non suggerisce manipolazioni o informazioni false"
+      ]
+    },
+    {
+      "id": 10,
+      "skill": "qualita-o-morte",
+      "prompt": "ogni volta che i volontari preparano le slide per le lezioni nelle scuole devo rifarle io. definiamo degli standard",
+      "files": [],
+      "expected_output": "Carta della qualità con livello, criteri verificabili, esempi e controlli sulla bozza.",
+      "expectations": [
+        "I criteri sono verificabili con un sì o un no",
+        "Prevede un controllo sulla bozza, non solo alla fine",
+        "Propone un esempio di riferimento"
+      ]
+    },
+    {
+      "id": 11,
+      "skill": "dottor-cane",
+      "prompt": "dottor cane, ho un problema con la squadra: sono tutti stanchi e due di loro litigano",
+      "files": [],
+      "expected_output": "Il router sceglie al massimo due skill in ordine (coffee-break e adesso-mi-calmo) e avvia la prima.",
+      "expectations": [
+        "Sceglie coffee-break e adesso-mi-calmo, in un ordine motivato",
+        "Avvia la prima skill invece di limitarsi a nominarla"
+      ]
+    },
+    {
+      "id": 12,
+      "skill": "boris-pm:non-se-ne-esce",
+      "prompt": "ecco gli appunti della riunione del direttivo di ieri, fammi il verbale",
+      "files": [],
+      "expected_output": "Si attiva il verbale di boris-pm, non una skill di leadership.",
+      "expectations": ["Nessuna skill di boris-leadership viene invocata"]
+    },
+    {
+      "id": 13,
+      "skill": null,
+      "prompt": "scrivimi un post per linkedin sul nostro festival di novembre",
+      "files": [],
+      "expected_output": "Nessuna skill del plugin si attiva.",
+      "expectations": ["Nessuna skill di boris-leadership viene invocata"]
+    }
+  ]
+}

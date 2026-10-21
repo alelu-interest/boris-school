@@ -1,0 +1,166 @@
+{
+  "skill_name": "boris-pm",
+  "note": "Casi di prova del pacchetto. Il campo 'skill' dice quale skill dovrebbe attivarsi (null = nessuna). I file in 'files' vanno copiati nella cartella di prova: registro-festival.md va in boris/registro.md.",
+  "evals": [
+    {
+      "id": 1,
+      "skill": "non-se-ne-esce",
+      "prompt": "ecco gli appunti della riunione di ieri sul festival, sono in appunti.txt. mi fai il verbale?",
+      "files": ["evals/files/appunti-festival.txt", "evals/files/registro-festival.md"],
+      "expected_output": "Verbale con deciso, da fare, aperto e parcheggio; registro aggiornato con ID che continuano da A-004; verbale salvato in boris/verbali/.",
+      "expectations": [
+        "Tra le decisioni c'è solo il tema 'Ponti'; il prezzo dei biglietti è tra le questioni aperte, non tra le decisioni",
+        "L'azione 'sentire la scuola di grafica' ha il responsabile segnato come mancante ([CHI?] o equivalente), non inventato",
+        "Il budget assegnato a Fede, assente alla riunione, è segnalato come da confermare con lei",
+        "'Entro venerdì' è convertito in una data assoluta (2026-10-23) oppure segnalato",
+        "Le nuove azioni in boris/registro.md partono da A-004 e rispettano le colonne esistenti",
+        "Il nuovo sollecito al service audio aggiorna l'azione A-001 invece di crearne una doppia",
+        "Il prezzo dei biglietti entra nel registro come azione 'Decidere: …'",
+        "Nel verbale non ci sono citazioni di Boris né parolacce"
+      ]
+    },
+    {
+      "id": 2,
+      "skill": "a-cazzo-di-cane",
+      "prompt": "il festival è il 14 novembre e la data non si sposta. siamo 3 volontari e mancano 3 settimane. ancora da fare: sito nuovo, app per i biglietti, catering, video promo, confermare 8 artisti, merchandising, diretta streaming. adesso il municipio vuole anche un'area bimbi con animazione. non ci stiamo dentro, cosa tagliamo?",
+      "files": [],
+      "expected_output": "Taglio in quattro gruppi con i conti sulla capacità, cosa non si tocca, scorciatoie, e opzioni di risposta al municipio senza 'sì gratis'.",
+      "expectations": [
+        "Dichiara come vincolo fisso la data del 14 novembre",
+        "Usa i quattro gruppi (si gira, se avanza tempo, prossima stagione, scarto)",
+        "Confermare gli artisti e il catering sono tra i 'si gira'; l'app per i biglietti non lo è",
+        "Fa i conti tra lavoro stimato e capacità di 3 persone per 3 settimane, dichiarando che le stime sono grossolane",
+        "Per l'area bimbi propone opzioni (al posto di, con più risorse, non ora) e nessuna è un sì senza contropartita",
+        "Indica cosa non si fa mai alla buona (sicurezza, permessi, soldi)"
+      ]
+    },
+    {
+      "id": 3,
+      "skill": "smarmella",
+      "prompt": "devo dire al consiglio direttivo dell'associazione che il corso di formazione per i volontari slitta di 3 settimane: due docenti hanno disdetto e la sala che avevamo non è più disponibile. scrivimi la mail",
+      "files": [],
+      "expected_output": "Mail con la notizia nelle prime righe, impatto, piano, richiesta con scadenza, prossimo aggiornamento, più versione ultracorta.",
+      "expectations": [
+        "Lo slittamento di 3 settimane è detto esplicitamente entro le prime tre righe del corpo della mail",
+        "Non usa eufemismi come 'lieve slittamento' o 'piccolo ritardo'",
+        "Dice cosa serve dal direttivo, ed entro quando, oppure chiarisce che è solo un aggiornamento",
+        "Indica quando arriverà il prossimo aggiornamento",
+        "C'è una versione ultracorta di due righe",
+        "La mail non contiene riferimenti a Boris"
+      ]
+    },
+    {
+      "id": 4,
+      "skill": "boris",
+      "prompt": "boris, non so da dove partire: a marzo devo organizzare un hackathon per studenti universitari con l'associazione, siamo in 5 e abbiamo 3000 euro",
+      "files": [],
+      "expected_output": "Il router sceglie gli-occhi-del-cuore e la avvia: scheda progetto, tappe a ritroso con date assolute, agenda del kickoff, set montato.",
+      "expectations": [
+        "Sceglie gli-occhi-del-cuore e la avvia invece di limitarsi a nominarla",
+        "La trama in una riga cita cosa, per chi, quando e il risultato",
+        "Le tappe hanno date assolute AAAA-MM-GG prima di marzo 2027 e un responsabile o [DA DEFINIRE]",
+        "Crea boris/progetto.md e boris/registro.md",
+        "I dati mancanti (data esatta, luogo, numero di partecipanti) sono segnati [DA DEFINIRE], non inventati"
+      ]
+    },
+    {
+      "id": 5,
+      "skill": "dai-dai-dai",
+      "prompt": "cosa faccio oggi? devo chiudere il preventivo del catering, la sala non ha ancora confermato, marco aspetta da me la lista invitati da 3 giorni e alle 15 ho riunione col direttivo",
+      "files": [],
+      "expected_output": "Piano di giornata con al massimo tre priorità, la lista per Marco in cima perché sblocca un'altra persona, uno sblocco per la sala.",
+      "expectations": [
+        "Al massimo tre priorità in 'Si gira'",
+        "La lista invitati per Marco è la prima priorità o è motivata come sblocco di un'altra persona",
+        "Per la sala che non conferma c'è un'azione di sblocco con chi ed entro quando",
+        "La riunione delle 15 compare con cosa preparare"
+      ]
+    },
+    {
+      "id": 6,
+      "skill": "molto-italiano",
+      "prompt": "controlla se questo piano sta in piedi: 'il team si occuperà della comunicazione a breve. per gli sponsor ci pensa Gianni, ci ha già detto di sì a voce il direttore della banca. il budget lo vediamo dopo l'estate. obiettivo: fare un bell'evento.'",
+      "files": [],
+      "expected_output": "Pagella su 24 con i vizi trovati, citazioni, correzioni e riscritture.",
+      "expectations": [
+        "Segnala 'il team' come responsabile non valido (vizio 'ci pensiamo noi')",
+        "Segnala 'a breve' e 'dopo l'estate' come date vaghe",
+        "Segnala l'accordo a voce con la banca e chiede una conferma scritta",
+        "Segnala che 'fare un bell'evento' non è un criterio di successo verificabile",
+        "Dà un voto su 24 coerente con i vizi trovati",
+        "Non inventa nomi o date nelle riscritture: usa [DA DEFINIRE]"
+      ]
+    },
+    {
+      "id": 7,
+      "skill": "li-mortanguerieri",
+      "prompt": "il catering ci ha appena disdetto, l'evento è domani sera con 200 persone. che faccio??",
+      "files": [],
+      "expected_output": "Triage, contenimento nelle prossime due ore con orari, opzioni di piano B, comunicazione con messaggi pronti, orario del prossimo aggiornamento.",
+      "expectations": [
+        "Classifica la gravità",
+        "Il contenimento ha azioni con persona e orario nelle prossime due ore",
+        "Propone almeno due alternative concrete al catering con pro e contro",
+        "Prepara un messaggio per chi è colpito o per chi decide",
+        "Non cerca colpevoli"
+      ]
+    },
+    {
+      "id": 8,
+      "skill": "cagna-maledetta",
+      "prompt": "rileggi senza pietà questa mail per lo sponsor prima che la mandi: 'Gentile dott. Rossi, come associazione facciamo tante cose belle per i giovani. Ci piacerebbe se voleste sostenerci, anche poco. Fateci sapere! Grazie mille, a presto.'",
+      "files": [],
+      "expected_output": "Verdetto 'Rifacciamola' o 'Buona, ma…', tabella dei problemi per gravità con correzioni, una versione riscritta proposta.",
+      "expectations": [
+        "Il verdetto non è 'Buona!'",
+        "Segnala come bloccante che manca una richiesta concreta (cifra o forma di sostegno)",
+        "Segnala che mancano prove o numeri su cosa fa l'associazione",
+        "Ogni problema ha una correzione concreta",
+        "Il feedback non contiene insulti né il nome della skill"
+      ]
+    },
+    {
+      "id": 9,
+      "skill": null,
+      "prompt": "scrivimi una funzione python che calcola la media mobile su 7 giorni di una lista di vendite",
+      "files": [],
+      "expected_output": "Nessuna skill del pacchetto si attiva.",
+      "expectations": ["Nessuna skill di boris-pm viene invocata"]
+    },
+    {
+      "id": 10,
+      "skill": null,
+      "prompt": "mi consigli 3 episodi di Boris da far vedere a un amico che non l'ha mai vista?",
+      "files": [],
+      "expected_output": "Nessuna skill del pacchetto si attiva: parlare della serie non è lavoro da PM.",
+      "expectations": ["Nessuna skill di boris-pm viene invocata"]
+    },
+    {
+      "id": 11,
+      "skill": "si-o-no",
+      "prompt": "il service audio non mi risponde da 10 giorni sul preventivo, il comune deve ancora darci il permesso per la piazza e io devo ancora mandare a giulia la lista dei volontari. aiutami a sollecitare",
+      "files": [],
+      "expected_output": "Tabella chi deve cosa a chi (compreso ciò che deve l'utente), livello di sollecito per ogni voce, messaggi pronti che chiedono una risposta chiara con una data.",
+      "expectations": [
+        "La lista dei volontari per Giulia compare come cosa che deve l'utente",
+        "Il permesso del Comune è indicato come voce che blocca il progetto",
+        "Ogni messaggio contiene una sola richiesta, con una data",
+        "Nessun messaggio viene inviato: sono solo bozze"
+      ]
+    },
+    {
+      "id": 12,
+      "skill": "nessuno-e-piu-basito",
+      "prompt": "trasforma questi appunti in un PRD: vogliamo un'app semplice e intuitiva per prenotare le aule studio, deve essere veloce e scalabile, e a breve la vogliamo anche per altre università",
+      "files": [],
+      "expected_output": "PRD con contesto, obiettivi e metriche, cosa non facciamo, requisiti con criteri di accettazione, domande aperte e rapporto basiti.",
+      "expectations": [
+        "'Semplice', 'intuitiva', 'veloce' e 'scalabile' sono sostituiti da criteri misurabili o segnati [DA DEFINIRE]",
+        "'A breve' diventa una data o un [DA DEFINIRE]",
+        "C'è una sezione su cosa l'app non fa",
+        "C'è il rapporto basiti con quanti ne ha trovati e quali restano aperti",
+        "Non inventa numeri di utenti o di università"
+      ]
+    }
+  ]
+}
