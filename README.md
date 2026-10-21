@@ -26,7 +26,7 @@ Il piano completo — 64 frasi candidate, a quale skill vanno, quali sono già v
 Dentro Claude Code:
 
 ```
-/plugin marketplace add TUO-UTENTE/boris-school
+/plugin marketplace add alelu-interest/boris-school
 /plugin install boris-pm@boris-school
 /plugin install boris-leadership@boris-school
 ```

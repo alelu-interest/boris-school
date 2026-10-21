@@ -6,6 +6,8 @@
   "author": {
     "name": "Alessandro"
   },
+  "homepage": "https://github.com/alelu-interest/boris-school/tree/main/plugins/boris-pm",
+  "repository": "https://github.com/alelu-interest/boris-school",
   "license": "MIT",
   "keywords": [
     "project-management",
