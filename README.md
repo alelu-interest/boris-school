@@ -43,8 +43,10 @@ claude --plugin-dir ./plugins/boris-pm
 
 Su Claude.ai le skill si caricano una alla volta, come file zip:
 
-1. crea gli zip con `scripts/impacchetta.sh` (finiscono in `dist/<plugin>/`), oppure scaricali dalla pagina delle release;
+1. dalla [pagina delle release](https://github.com/alelu-interest/boris-school/releases) scarica lo zip del plugin che ti interessa (`boris-pm.zip` o `boris-leadership.zip`) e aprilo: dentro c'è una cartella con uno zip per ogni skill. In alternativa creali tu con `scripts/impacchetta.sh`: finiscono in `dist/<plugin>/`;
 2. nelle impostazioni di Claude, nella sezione delle skill, carica uno zip per ogni skill che vuoi usare.
+
+Le versioni prendono il nome dalle stagioni della fiction: la prima è *Gli occhi del cuore*.
 
 ## Le regole della scuola
 
