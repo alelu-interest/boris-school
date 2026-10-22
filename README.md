@@ -50,7 +50,7 @@ Su Claude.ai le skill si caricano una alla volta, come file zip:
 1. dalla [pagina delle release](https://github.com/alelu-interest/boris-school/releases) scarica lo zip del plugin che ti interessa (per esempio `boris-pm.zip`) e aprilo: dentro c'è una cartella con uno zip per ogni skill. In alternativa creali tu con `scripts/impacchetta.sh`: finiscono in `dist/<plugin>/`;
 2. nelle impostazioni di Claude, nella sezione delle skill, carica uno zip per ogni skill che vuoi usare.
 
-Le versioni prendono il nome dalle stagioni della fiction: la prima è *Gli occhi del cuore*, la seconda *Gli occhi del cuore 2*.
+Le versioni prendono il nome dalla fiction girata dalla troupe: *Gli occhi del cuore*.
 
 ## Le regole della scuola
 

@@ -1,6 +1,6 @@
 # Come sono state provate le skill
 
-**Data:** 2026-10-22 · **Versione:** 0.2.0, *Gli occhi del cuore 2*
+**Data:** 2026-10-22 · **Versione:** 0.2.0, *Gli occhi del cuore*
 
 ## Il metodo
 
