@@ -1,8 +1,8 @@
 {
   "name": "boris-leadership",
   "displayName": "Boris Leadership",
-  "version": "0.1.0",
-  "description": "11 skill per chi guida persone e squadre, ispirate alle frasi iconiche di Boris: conflitti con adesso-mi-calmo, escalation con papa-nero, carichi con coffee-break, crescita con tu-sei-una-macchina, selezioni con grandi-attori. Il secondo plugin della Boris School of Management.",
+  "version": "0.2.0",
+  "description": "12 skill per chi guida persone e squadre, ispirate alle frasi iconiche di Boris: conflitti con adesso-mi-calmo, escalation con papa-nero, feedback con stop-ottima, carichi con coffee-break, crescita con tu-sei-una-macchina, selezioni con grandi-attori. Il secondo plugin della Boris School of Management.",
   "author": {
     "name": "Alessandro"
   },

@@ -1,0 +1,19 @@
+{
+  "name": "boris-prodotto",
+  "displayName": "Boris Prodotto",
+  "version": "0.1.0",
+  "description": "10 skill per chi costruisce prodotti e servizi, ispirate alle frasi iconiche di Boris: innovazione vera con la-locura, validazione con puzza-di-capolavoro, test con gli utenti con guarda-in-camera, esperimenti con comicita-matematica, testi chiari con l-orafo. Un plugin della Boris School of Management.",
+  "author": {
+    "name": "Alessandro"
+  },
+  "homepage": "https://github.com/alelu-interest/boris-school/tree/main/plugins/boris-prodotto",
+  "repository": "https://github.com/alelu-interest/boris-school",
+  "license": "MIT",
+  "keywords": [
+    "product-management",
+    "ux",
+    "experimentation",
+    "boris",
+    "italiano"
+  ]
+}

@@ -10,8 +10,8 @@
       "name": "boris-pm",
       "displayName": "Boris PM",
       "source": "./plugins/boris-pm",
-      "version": "0.1.0",
-      "description": "17 skill da project e product manager ispirate alle frasi iconiche di Boris: si parte con gli-occhi-del-cuore, si gira con dai-dai-dai, si taglia con a-cazzo-di-cane, si comunica con smarmella, si chiude con la festa-del-grazie. La battuta è il nome, il metodo è serio.",
+      "version": "0.2.0",
+      "description": "23 skill da project e product manager ispirate alle frasi iconiche di Boris: dai-dai-dai, a-cazzo-di-cane, smarmella, apri-tutto, ritardo-mostruoso, quanto-ce-costa, fa-un-ponte, cagna-maledetta e il resto della troupe. Il primo plugin della Boris School of Management.",
       "author": {
         "name": "Alessandro"
       },
@@ -26,8 +26,8 @@
       "name": "boris-leadership",
       "displayName": "Boris Leadership",
       "source": "./plugins/boris-leadership",
-      "version": "0.1.0",
-      "description": "11 skill per chi guida persone e squadre, ispirate alle frasi iconiche di Boris: conflitti con adesso-mi-calmo, escalation con papa-nero, carichi con coffee-break, crescita con tu-sei-una-macchina, selezioni con grandi-attori. La battuta è il nome, il metodo è serio.",
+      "version": "0.2.0",
+      "description": "12 skill per chi guida persone e squadre, ispirate alle frasi iconiche di Boris: conflitti con adesso-mi-calmo, escalation con papa-nero, feedback con stop-ottima, carichi con coffee-break, crescita con tu-sei-una-macchina, selezioni con grandi-attori. Il secondo plugin della Boris School of Management.",
       "author": {
         "name": "Alessandro"
       },
@@ -35,6 +35,86 @@
       "tags": [
         "leadership",
         "people-management",
+        "italiano"
+      ]
+    },
+    {
+      "name": "boris-prodotto",
+      "displayName": "Boris Prodotto",
+      "source": "./plugins/boris-prodotto",
+      "version": "0.1.0",
+      "description": "10 skill per chi costruisce prodotti e servizi, ispirate alle frasi iconiche di Boris: innovazione vera con la-locura, validazione con puzza-di-capolavoro, test con gli utenti con guarda-in-camera, esperimenti con comicita-matematica, testi chiari con l-orafo. Un plugin della Boris School of Management.",
+      "author": {
+        "name": "Alessandro"
+      },
+      "category": "productivity",
+      "tags": [
+        "product-management",
+        "ux",
+        "italiano"
+      ]
+    },
+    {
+      "name": "boris-vendite",
+      "displayName": "Boris Vendite",
+      "source": "./plugins/boris-vendite",
+      "version": "0.1.0",
+      "description": "7 skill per chi deve trovare clienti, sponsor, partner o iscritti, ispirate alle frasi iconiche di Boris: campagne con facciamo-il-botto, contatti mirati con tre-g, decisori con dov-e-il-regista, concorrenza con vado-alla-concorrenza. Un plugin della Boris School of Management.",
+      "author": {
+        "name": "Alessandro"
+      },
+      "category": "productivity",
+      "tags": [
+        "sales",
+        "marketing",
+        "italiano"
+      ]
+    },
+    {
+      "name": "boris-strategia",
+      "displayName": "Boris Strategia",
+      "source": "./plugins/boris-strategia",
+      "version": "0.1.0",
+      "description": "11 skill di strategia e pensiero critico ispirate alle frasi iconiche di Boris: benchmarking con molto-americano, scenari con paese-di-musichette, mercato con la-concorrenza-siamo-noi, rilancio con re-della-merda, impatto sociale con il-darfur. Un plugin della Boris School of Management.",
+      "author": {
+        "name": "Alessandro"
+      },
+      "category": "productivity",
+      "tags": [
+        "strategy",
+        "critical-thinking",
+        "italiano"
+      ]
+    },
+    {
+      "name": "boris-finanza",
+      "displayName": "Boris Finanza",
+      "source": "./plugins/boris-finanza",
+      "version": "0.1.0",
+      "description": "8 skill di finanza e monetizzazione per associazioni, piccole organizzazioni e progetti, ispirate alle frasi iconiche di Boris: cassa e competenza con straordinari-di-aprile, margini con la-ristorazione, autonomia di cassa con a-noi-giovani, metriche con undici-milioni. Educazione e analisi, non consulenza d'investimento. Un plugin della Boris School of Management.",
+      "author": {
+        "name": "Alessandro"
+      },
+      "category": "productivity",
+      "tags": [
+        "finance",
+        "budgeting",
+        "italiano"
+      ]
+    },
+    {
+      "name": "boris-dati",
+      "displayName": "Boris Dati",
+      "source": "./plugins/boris-dati",
+      "version": "0.1.0",
+      "description": "8 skill su dati e automazione ispirate alle frasi iconiche di Boris: automazioni con f4, pulizia dei dati con scarto, raccolta dal web con gira-piu-che-puoi, fonti con ricerca-meticolosa, licenze con il-genio-ruba, grafici chiari con il-cane-di-casa. Un plugin della Boris School of Management.",
+      "author": {
+        "name": "Alessandro"
+      },
+      "category": "productivity",
+      "tags": [
+        "data",
+        "automation",
         "italiano"
       ]
     }

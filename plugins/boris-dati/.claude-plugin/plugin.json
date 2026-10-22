@@ -1,0 +1,21 @@
+{
+  "name": "boris-dati",
+  "displayName": "Boris Dati",
+  "version": "0.1.0",
+  "description": "8 skill su dati e automazione ispirate alle frasi iconiche di Boris: automazioni con f4, pulizia dei dati con scarto, raccolta dal web con gira-piu-che-puoi, fonti con ricerca-meticolosa, licenze con il-genio-ruba, grafici chiari con il-cane-di-casa. Un plugin della Boris School of Management.",
+  "author": {
+    "name": "Alessandro"
+  },
+  "homepage": "https://github.com/alelu-interest/boris-school/tree/main/plugins/boris-dati",
+  "repository": "https://github.com/alelu-interest/boris-school",
+  "license": "MIT",
+  "keywords": [
+    "data",
+    "data-quality",
+    "automation",
+    "web-scraping",
+    "data-storytelling",
+    "boris",
+    "italiano"
+  ]
+}

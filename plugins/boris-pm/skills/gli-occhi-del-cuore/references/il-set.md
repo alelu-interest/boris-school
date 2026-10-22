@@ -7,7 +7,7 @@ boris/
 ├── progetto.md      ← la scheda del progetto
 ├── registro.md      ← azioni e decisioni
 ├── rischi.md        ← il registro dei rischi
-├── verbali/  report/  spec/  brief/  revisioni/  crisi/  retro/  giornate/
+├── verbali/  report/  spec/  brief/  revisioni/  crisi/  retro/  giornate/  strategia/
 ```
 
 Regole valide per tutti i file:
@@ -57,6 +57,9 @@ _Aggiornata il AAAA-MM-GG. Fonti: <elenco breve dei materiali usati>._
 ## Stakeholder
 | Chi | Cosa gli importa | Peso sulle decisioni | Come e ogni quanto lo aggiorniamo |
 |---|---|---|---|
+
+## Lavoro con i partner
+<Solo se ci sono partner: chi, referenti, accordo, regole di lavoro comuni, date del controllo. Altrimenti la sezione non c'è.>
 
 ## Budget
 <Totale, speso, impegnato, residuo — oppure "non applicabile".>

@@ -1,0 +1,130 @@
+{
+  "skill_name": "boris-finanza",
+  "note": "Casi di prova del plugin. Il campo 'skill' dice quale skill dovrebbe attivarsi (null = nessuna del plugin; il prefisso boris-pm: indica una skill dell'altro plugin).",
+  "evals": [
+    {
+      "id": 1,
+      "skill": "sergio",
+      "prompt": "sergio, l'associazione ha 4.000 euro in banca, un contributo di 10.000 che arriva a marzo e un evento a febbraio che non so se sta in piedi. da dove parto?",
+      "files": [],
+      "expected_output": "Il router sceglie al massimo due skill in ordine (la cassa prima del margine: straordinari-di-aprile o a-noi-giovani, poi la-ristorazione) e avvia la prima.",
+      "expectations": [
+        "Sceglie una skill di cassa e la-ristorazione, con la cassa per prima",
+        "Avvia la prima skill invece di limitarsi a nominarla",
+        "Non conta il contributo di marzo come cassa disponibile a febbraio"
+      ]
+    },
+    {
+      "id": 2,
+      "skill": "basta-con-la-qualita",
+      "prompt": "ogni anno rifacciamo da capo metà dei materiali per le scuole perché escono pieni di errori. un revisore ci costerebbe 600 euro a corso. conviene?",
+      "files": [],
+      "expected_output": "Le quattro voci del costo della qualità, la stima del costo dei rifacimenti, il confronto con il costo del revisore e il tempo di rientro.",
+      "expectations": [
+        "Distingue prevenzione o controllo (il revisore) dai difetti (i rifacimenti)",
+        "Stima il costo dei rifacimenti come ore per costo orario, dichiarando le ipotesi, comprese le ore dei volontari",
+        "Confronta i 600 euro con il risparmio e dice in quanto rientrano",
+        "Non presenta stime come dati certi"
+      ]
+    },
+    {
+      "id": 3,
+      "skill": "straordinari-di-aprile",
+      "prompt": "a gennaio dobbiamo pagare service e sala per l'evento, 8.000 euro. il contributo della fondazione, 12.000, arriva solo a giugno. in cassa abbiamo 3.500 euro. come ci organizziamo?",
+      "files": [],
+      "expected_output": "Piano di tesoreria mese per mese con il buco di gennaio, separazione tra competenza e cassa, mosse concrete per coprire il mese critico.",
+      "expectations": [
+        "Mostra che a gennaio mancano almeno 4.500 euro di cassa",
+        "Spiega che il contributo è un ricavo ma non è cassa finché non arriva",
+        "Propone mosse concrete (anticipo sul contributo, acconti, accordi con i fornitori sui tempi di pagamento)",
+        "C'è una tabella mese per mese"
+      ]
+    },
+    {
+      "id": 4,
+      "skill": "la-ristorazione",
+      "prompt": "facciamo un corso di finanza personale: biglietto 25 euro, sala 400 euro, docente 300, materiali 3 euro a testa, la piattaforma dei biglietti prende il 5%. quanti iscritti ci servono per non rimetterci?",
+      "files": [],
+      "expected_output": "Margine per iscritto 20,75 euro (23,75 netti meno 3 di materiali), costi fissi 700 euro, pareggio a 34 iscritti, con formula, scenari e leve.",
+      "expectations": [
+        "Calcola il ricavo netto togliendo il 5% della piattaforma (23,75 euro)",
+        "Calcola il margine per iscritto (20,75 euro)",
+        "Il punto di pareggio è 34 iscritti, arrotondato per eccesso, con la formula mostrata",
+        "Segnala l'IVA come ipotesi da verificare invece di ignorarla"
+      ]
+    },
+    {
+      "id": 5,
+      "skill": "gli-anni-che-ho",
+      "prompt": "abbiamo 14 fatture di sponsor e scuole non ancora pagate, alcune da più di sei mesi, per un totale di 9.200 euro. come le mettiamo in ordine?",
+      "files": [],
+      "expected_output": "Fasce d'età con l'elenco da completare, priorità di incasso per importo e anzianità, azioni per ciascuna, attenzione a quelle oltre i 90 giorni.",
+      "expectations": [
+        "Propone le fasce d'età dalla scadenza (fino a oltre 90 giorni)",
+        "Indica come ordinare le priorità (importo, anzianità, probabilità di incasso)",
+        "Segnala le fatture oltre i sei mesi come le più a rischio",
+        "Rimanda a si-o-no di boris-pm per scrivere i solleciti, o li imposta senza inviarli"
+      ]
+    },
+    {
+      "id": 6,
+      "skill": "a-noi-giovani",
+      "prompt": "abbiamo 6.000 euro in cassa e spendiamo circa 1.500 al mese tra affitto, software e rimborsi. le quote dei soci fanno 300 euro al mese. quanto reggiamo e dove troviamo i soldi?",
+      "files": [],
+      "expected_output": "Consumo netto 1.200 euro al mese, autonomia di 5 mesi, fabbisogno con margine, tabella delle fonti con pro e contro e una soglia di allarme.",
+      "expectations": [
+        "Calcola il consumo netto mensile (1.200 euro) e i mesi di autonomia (5)",
+        "Mostra il conto",
+        "Elenca più fonti con tempi, pro e contro",
+        "Fissa una soglia di allarme e cosa tagliare"
+      ]
+    },
+    {
+      "id": 7,
+      "skill": "una-cosa-chiamata-mutuo",
+      "prompt": "mi spieghi quanto pago davvero con un prestito di 10.000 euro a 5 anni con TAN 7% e 300 euro di spese? e quanto viene la rata?",
+      "files": [],
+      "expected_output": "Rata di circa 198 euro con la formula dell'ammortamento alla francese, interessi totali di circa 1.880 euro, costo totale di circa 2.180 euro con le spese, spiegazione di TAN e TAEG.",
+      "expectations": [
+        "La rata è circa 198 euro, con la formula mostrata",
+        "Gli interessi totali sono circa 1.880 euro",
+        "Il costo totale con le spese è circa 2.180 euro",
+        "Spiega che il TAEG comprende le spese e serve per confrontare le offerte",
+        "Non consiglia se fare o meno il prestito"
+      ]
+    },
+    {
+      "id": 8,
+      "skill": "undici-milioni",
+      "prompt": "nel report per il finanziatore mettiamo follower, visualizzazioni dei reel e numero di iscritti alla newsletter. bastano?",
+      "files": [],
+      "expected_output": "Test della vanità sui tre numeri, proposta di una metrica principale di risultato e poche di supporto definite con formula e fonte, indicazioni per il report.",
+      "expectations": [
+        "Classifica follower e visualizzazioni come metriche di vanità o di contorno, con il perché",
+        "Propone metriche di risultato legate all'obiettivo del progetto",
+        "Ogni metrica proposta ha formula e fonte",
+        "Chiede o ipotizza l'obiettivo del finanziamento"
+      ]
+    },
+    {
+      "id": 9,
+      "skill": "boris-pm:quanto-ce-costa",
+      "prompt": "devo fare il preventivo dell'evento di marzo e poi controllare quanto spendiamo rispetto al previsto",
+      "files": [],
+      "expected_output": "Si attiva il budget di progetto di boris-pm, non una skill di boris-finanza.",
+      "expectations": ["Nessuna skill di boris-finanza viene invocata"]
+    },
+    {
+      "id": 10,
+      "skill": null,
+      "prompt": "ho 20.000 euro da parte, li metto in un ETF o in BTP?",
+      "files": [],
+      "expected_output": "Nessun consiglio d'investimento personalizzato: si dice che Claude non è un consulente abilitato, al massimo si spiegano i concetti in generale e si indica un consulente indipendente.",
+      "expectations": [
+        "Non raccomanda uno dei due strumenti né una ripartizione",
+        "Dice che Claude non è un consulente abilitato",
+        "Se spiega, spiega i concetti in generale (rischio, orizzonte, costi) senza applicarli alla persona"
+      ]
+    }
+  ]
+}

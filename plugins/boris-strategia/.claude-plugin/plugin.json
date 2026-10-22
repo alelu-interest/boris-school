@@ -1,0 +1,19 @@
+{
+  "name": "boris-strategia",
+  "displayName": "Boris Strategia",
+  "version": "0.1.0",
+  "description": "11 skill di strategia e pensiero critico ispirate alle frasi iconiche di Boris: benchmarking con molto-americano, scenari con paese-di-musichette, mercato con la-concorrenza-siamo-noi, rilancio con re-della-merda, impatto sociale con il-darfur. Un plugin della Boris School of Management.",
+  "author": {
+    "name": "Alessandro"
+  },
+  "homepage": "https://github.com/alelu-interest/boris-school/tree/main/plugins/boris-strategia",
+  "repository": "https://github.com/alelu-interest/boris-school",
+  "license": "MIT",
+  "keywords": [
+    "strategia",
+    "pensiero-critico",
+    "scenari",
+    "boris",
+    "italiano"
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "skill_name": "boris-dati",
+  "note": "Casi di prova del plugin. Il campo 'skill' dice quale skill dovrebbe attivarsi (null = nessuna del plugin; il prefisso boris-pm: indica una skill dell'altro plugin).",
+  "evals": [
+    {
+      "id": 1,
+      "skill": "itala",
+      "prompt": "itala, ho un casino coi dati: il foglio dei volontari è pieno di errori e poi devo presentare i numeri al direttivo a fine mese",
+      "files": [],
+      "expected_output": "Il router sceglie scarto e poi il-cane-di-casa, in quest'ordine, e avvia la prima.",
+      "expectations": [
+        "Sceglie scarto prima di il-cane-di-casa, spiegando che i dati vanno puliti prima di raccontarli",
+        "Avvia la prima skill invece di limitarsi a nominarla",
+        "Le domande delle due skill sono in un'unica lista in fondo"
+      ]
+    },
+    {
+      "id": 2,
+      "skill": "f4",
+      "prompt": "ogni lunedì copio a mano le iscrizioni dal modulo google al foglio presenze e poi mando a ciascuno una mail di conferma. ci metto due ore. si può automatizzare?",
+      "files": [],
+      "expected_output": "Lavoro di oggi, valutazione, regole quando-se-allora, controlli e avvisi, eccezioni con un responsabile, strumento semplice, collaudo in parallelo.",
+      "expectations": [
+        "Scrive le regole nella forma quando… se… allora…",
+        "Prevede un avviso a una persona quando l'automazione fallisce",
+        "Indica cosa succede con le eccezioni e chi le gestisce",
+        "Propone un collaudo su un campione o in parallelo al lavoro a mano prima di spegnerlo"
+      ]
+    },
+    {
+      "id": 3,
+      "skill": "scarto",
+      "prompt": "ho un foglio con 1.200 iscritti agli eventi degli ultimi due anni: doppioni, email scritte male, date in tre formati diversi, comuni scritti in tutti i modi. pulisci",
+      "files": [],
+      "expected_output": "Profilo, regole di validazione per colonna, doppioni certi e probabili, campione prima e dopo, registro degli scarti, conservazione dell'originale.",
+      "expectations": [
+        "Propone regole di validazione colonna per colonna, con un esempio che passa e uno che non passa",
+        "Distingue doppioni certi da probabili e non unisce i probabili da solo",
+        "Lavora prima su un campione e conserva l'originale",
+        "Prevede un registro di cosa è stato corretto o scartato",
+        "Non inventa valori per riempire i campi vuoti"
+      ]
+    },
+    {
+      "id": 4,
+      "skill": "le-pezze",
+      "prompt": "nel report dell'anno scorso c'è scritto che abbiamo raggiunto 4.300 studenti, ma nessuno sa più come è stato calcolato. il finanziatore ce lo chiede",
+      "files": [],
+      "expected_output": "Catena di provenienza da ricostruire anello per anello, cosa chiedere e a chi, limiti del dato, prova del rifacimento, anelli mancanti segnati.",
+      "expectations": [
+        "Ricostruisce la catena fonte, estrazione, trasformazioni, risultato",
+        "Segna come non ricostruito ciò che non si sa, senza inventarlo",
+        "Indica i limiti del dato, per esempio studenti contati più volte",
+        "Propone la prova del rifacimento da parte di un'altra persona"
+      ]
+    },
+    {
+      "id": 5,
+      "skill": "gira-piu-che-puoi",
+      "prompt": "voglio raccogliere ogni settimana tutti i bandi pubblicati sui siti di 15 fondazioni e metterli in un foglio con scadenza, importo e requisiti",
+      "files": [],
+      "expected_output": "Piano di raccolta che parte dalle strade ufficiali, controlla termini e robots.txt, fissa pause e frequenza, gestisce errori e cambiamenti, prevede un giro di prova.",
+      "expectations": [
+        "Cerca prima strade ufficiali (newsletter, feed RSS, API, portali di bandi)",
+        "Controlla termini d'uso e robots.txt prima di raccogliere",
+        "Prevede pause tra le richieste e una frequenza ragionevole",
+        "Prevede un avviso quando un sito cambia struttura",
+        "Parte da un giro di prova su poche pagine"
+      ]
+    },
+    {
+      "id": 6,
+      "skill": "ricerca-meticolosa",
+      "prompt": "devo scrivere nel progetto che i ragazzi italiani hanno poche competenze finanziarie. trovami le fonti migliori",
+      "files": [],
+      "expected_output": "Mappa delle fonti valutate con criteri espliciti, comprese quelle che sfumano o smentiscono l'ipotesi, fonte originale dei numeri, cose da verificare.",
+      "expectations": [
+        "Dichiara l'ipotesi di partenza e cerca anche fonti che la sfumano o la smentiscono",
+        "Valuta le fonti con criteri espliciti (chi le produce, metodo, data, copertura)",
+        "Indica di citare la fonte originale e non l'articolo che la riprende",
+        "Segna come da verificare ciò che non ha controllato, senza inventare link o numeri"
+      ]
+    },
+    {
+      "id": 7,
+      "skill": "il-genio-ruba",
+      "prompt": "ho trovato su un blog un'infografica bellissima con i dati sul risparmio dei giovani. posso metterla nella presentazione che usiamo nelle scuole e nel report per lo sponsor?",
+      "files": [],
+      "expected_output": "Distinzione tra i due usi, ricerca della fonte originale, licenza da verificare, cosa si può fare e come attribuire, alternative se non si può.",
+      "expectations": [
+        "Distingue l'uso nelle scuole dall'uso nel report per lo sponsor",
+        "Suggerisce di risalire alla fonte originale dei dati, non al blog",
+        "Spiega che senza una licenza esplicita non si può dare per libero",
+        "Propone un'alternativa pulita, per esempio rifare il grafico dai dati originali citandoli"
+      ]
+    },
+    {
+      "id": 8,
+      "skill": "il-cane-di-casa",
+      "prompt": "a fine mese devo presentare al direttivo i numeri dell'anno: iscritti per mese, ore di formazione, gradimento, costi. sono 40 righe di tabella, come li presento?",
+      "files": [],
+      "expected_output": "Conclusione in una riga, una frase per grafico, il tipo di grafico giusto per ciascun messaggio, confronti e fonti, controllo di onestà, una pagina per chi decide.",
+      "expectations": [
+        "Ogni grafico ha una frase che dice la conclusione, non l'argomento",
+        "Sceglie il tipo di grafico in base al messaggio (linee per il tempo, barre per i confronti)",
+        "Ogni numero ha un confronto (anno prima, obiettivo)",
+        "Propone una pagina con in alto la conclusione e la richiesta al direttivo"
+      ]
+    },
+    {
+      "id": 9,
+      "skill": "boris-pm:smarmella",
+      "prompt": "devo dire allo sponsor che il progetto è in ritardo di due settimane perché il fornitore non ha consegnato. scrivimi la mail",
+      "files": [],
+      "expected_output": "Si attiva la comunicazione agli stakeholder di boris-pm, non una skill di boris-dati.",
+      "expectations": ["Nessuna skill di boris-dati viene invocata"]
+    },
+    {
+      "id": 10,
+      "skill": null,
+      "prompt": "traducimi in inglese questo paragrafo della newsletter",
+      "files": [],
+      "expected_output": "Nessuna skill del plugin si attiva.",
+      "expectations": ["Nessuna skill di boris-dati viene invocata"]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 ---
 name: boris
-description: Porta d'ingresso del pacchetto boris-pm, skill da project e product manager ispirate alla serie Boris. Usala quando l'utente scrive "boris", "dai boris", "che skill uso?", "cosa c'è nel pacchetto?", oppure descrive un problema di gestione di un progetto senza sapere da dove cominciare - un progetto da far partire, un progetto in ritardo, troppe cose da fare, una riunione o un report da preparare, una squadra da coordinare, un casino da sistemare. Capisce la situazione con al massimo una domanda e avvia la skill giusta del set (dai-dai-dai, a-cazzo-di-cane, smarmella, apri-tutto, genio e le altre). Se l'utente la chiama per nome usala sempre, poi passa subito alla skill giusta; altrimenti non usarla quando la richiesta corrisponde già chiaramente a una skill specifica del pacchetto, e usa direttamente quella.
+description: Porta d'ingresso del pacchetto boris-pm, skill da project e product manager ispirate alla serie Boris. Usala quando l'utente scrive "boris" riferito al pacchetto o a un suo progetto (non per domande sulla serie), "dai boris", "che skill uso?", "cosa c'è nel pacchetto?", oppure descrive un problema di gestione di un progetto senza sapere da dove cominciare - un progetto da far partire, un progetto in ritardo, troppe cose da fare, una riunione o un report da preparare, una squadra da coordinare, un casino da sistemare. Capisce la situazione con al massimo una domanda e avvia la skill giusta del set (dai-dai-dai, a-cazzo-di-cane, smarmella, apri-tutto, genio e le altre). Se l'utente la chiama per nome usala sempre, poi passa subito alla skill giusta; altrimenti non usarla quando la richiesta corrisponde già chiaramente a una skill specifica del pacchetto, e usa direttamente quella.
 ---
 
 # Boris — il pesce rosso del set
@@ -28,11 +28,17 @@ Se l'utente chiede cosa c'è nel pacchetto, mostra il palinsesto (la tabella) e 
 | Cosa facciamo oggi o questa settimana | `dai-dai-dai` | Piano di giornata, blocchi e sblocchi, standup |
 | Troppe cose: quale prima? | `genio` | Classifica con metodo e lista del non-fare |
 | Non ci stiamo coi tempi, o arriva una richiesta nuova | `a-cazzo-di-cane` | Cosa si fa, si rimanda, si scarta; impatto delle richieste |
+| Siamo in ritardo sulla data | `ritardo-mostruoso` | Percorso critico, leve per recuperare, piano ripianificato |
+| Chi sono gli stakeholder e come li coinvolgo | `lo-vogliono-loro` | Mappa potere e interesse, piano di coinvolgimento |
+| Una collaborazione con un'altra organizzazione | `fa-un-ponte` | Scelta dei partner, scambio, bozza di accordo, controllo |
+| Quanto costa, o stiamo sforando | `quanto-ce-costa` | Budget voce per voce, preventivi, consuntivo |
+| Ha ancora senso andare avanti? | `io-faccio-il-limoncello` | Criteri, opzioni, uscita ordinata |
 | Devo affidare un lavoro a qualcuno | `stagista` | Brief di delega a prova di primo giorno |
 | Devo scrivere una specifica, un PRD, un brief, un capitolato | `nessuno-e-piu-basito` | Documento pronto, senza frasi riempitive |
 | Riunione da preparare, verbale da fare, decisione bloccata | `non-se-ne-esce` | Agenda, verbale, decisione strutturata |
 | Gente che non risponde, cose in sospeso | `si-o-no` | Chi deve cosa a chi, messaggi di sollecito |
 | È successo un casino | `li-mortanguerieri` | Triage, contenimento, comunicazione, post-mortem |
+| Cambiamo strumento, processo o regole e la squadra deve seguirci | `de-botto-senza-senso` | Perché, percorso, resistenze, messaggio di annuncio |
 | Devo aggiornare capo, cliente o sponsor, o dare una brutta notizia | `smarmella` | Status report o messaggio pronto da mandare |
 | Questo piano sta in piedi? | `molto-italiano` | Pagella dei vizi con le righe riscritte |
 | Rileggimi questo senza pietà, o è pronto per uscire? | `cagna-maledetta` | Revisione per gravità e verdetto |
@@ -40,11 +46,11 @@ Se l'utente chiede cosa c'è nel pacchetto, mostra il palinsesto (la tabella) e 
 
 ## Il giro completo di un progetto
 
-Per chi vuole il percorso intero: `gli-occhi-del-cuore` → `non-sento-l-africa` → `bucio-de-culo` → ogni settimana `dai-dai-dai`, `non-se-ne-esce`, `si-o-no` e `smarmella` → prima di ogni uscita `cagna-maledetta` → alla fine `festa-del-grazie`. Quando qualcosa si rompe: `li-mortanguerieri`. Quando il tempo finisce: `a-cazzo-di-cane`.
+Per chi vuole il percorso intero: `gli-occhi-del-cuore` → `non-sento-l-africa` → `bucio-de-culo` → ogni settimana `dai-dai-dai`, `non-se-ne-esce`, `si-o-no` e `smarmella` → prima di ogni uscita `cagna-maledetta` → alla fine `festa-del-grazie`. Quando qualcosa si rompe: `li-mortanguerieri`. Quando il tempo finisce: `a-cazzo-di-cane` o `ritardo-mostruoso`. Quando il progetto non regge più: `io-faccio-il-limoncello`. Con dei partner: `fa-un-ponte`. Quando cambia il modo di lavorare: `de-botto-senza-senso`.
 
 ## Gli altri plugin della scuola
 
-Per i problemi di persone e di squadra (conflitti, crescita, carichi, selezione, etica) c'è `boris-leadership`, con la sua porta d'ingresso `dottor-cane`, se è installato. Se non lo è, resta qui e fai il meglio con le skill di questo plugin.
+Se sono installati, ogni area ha la sua porta d'ingresso: persone e squadre in `boris-leadership` (`dottor-cane`), prodotto in `boris-prodotto` (`medical-dimension`), vendite e marketing in `boris-vendite` (`lopez`), strategia e pensiero critico in `boris-strategia` (`la-rete`), conti e finanza in `boris-finanza` (`sergio`), dati e automazione in `boris-dati` (`itala`). Se non lo sono, resta qui e fai il meglio con le skill di questo plugin.
 
 ## Il set (file condivisi)
 
@@ -53,7 +59,7 @@ Le skill del pacchetto condividono la cartella `boris/` dentro la cartella del p
 - `boris/progetto.md` — la scheda del progetto (la creano `gli-occhi-del-cuore` o `apri-tutto`);
 - `boris/registro.md` — azioni e decisioni, con ID progressivi (A-001, D-001);
 - `boris/rischi.md` — il registro dei rischi;
-- sottocartelle per i documenti datati: `verbali/`, `report/`, `spec/`, `brief/`, `revisioni/`, `crisi/`, `retro/`, `giornate/`.
+- sottocartelle per i documenti datati: `verbali/`, `report/`, `spec/`, `brief/`, `revisioni/`, `crisi/`, `retro/`, `giornate/`, `strategia/` (per le analisi di boris-strategia).
 
 Solo le due skill di avvio montano il set; le altre lo usano se c'è e, se non c'è, lo propongono in una riga. Senza accesso ai file (per esempio su Claude.ai) tutto resta in chat.
 
@@ -69,3 +75,4 @@ Solo le due skill di avvio montano il set; le altre lo usano se c'è e, se non c
 - I testi destinati ad altre persone (mail, messaggi, report, documenti) escono puliti: niente citazioni, niente parolacce, salvo richiesta esplicita dell'utente.
 - Niente dati inventati: nomi, date e numeri che mancano diventano `[DA DEFINIRE]` o una domanda.
 - Rispondi nella lingua dell'utente; di default in italiano.
+- La risposta in chat apre con la sintesi operativa (le prime mosse, in poche righe): se il modello di consegna comincia con una sintesi ("In breve", "In sintesi", "Verdetto"), è quella e non si ripete; se no, va in testa al modello. La battuta, se c'è, sta in una riga prima della sintesi o in chiusura. Poi il dettaglio, senza sezioni ripetute né tabelle vuote: una voce del modello senza contenuto si salta, e una tabella fatta quasi solo di spazi da completare diventa l'elenco di cosa raccogliere. Stime, date e soglie proposte da te vanno bene se le dichiari come tali, con il ragionamento: quando il metodo chiede un numero per decidere, proponi una stima dichiarata invece di lasciarlo in bianco. I fatti che mancano (nomi, dati dell'utente, cose successe) restano spazi da completare. Se il dettaglio supera le due pagine (circa 900 parole in tutto, messaggi e domande compresi), consegna la parte che serve adesso e offri il resto.

@@ -1,6 +1,6 @@
 # boris-leadership
 
-**Il secondo plugin della [Boris School of Management](../../README.md): 11 skill per chi guida persone e squadre** — responsabili, coordinatori, presidenti di associazione, chi gestisce volontari. Conflitti, escalation, carichi di lavoro, qualità, crescita, clima, motivazione, etica, selezione e politica interna.
+**Il secondo plugin della [Boris School of Management](../../README.md): 12 skill per chi guida persone e squadre** — responsabili, coordinatori, presidenti di associazione, chi gestisce volontari. Conflitti, escalation, carichi di lavoro, qualità, crescita, clima, motivazione, etica, selezione e politica interna.
 
 ```
 /plugin install boris-leadership@boris-school
@@ -15,7 +15,8 @@
 | [`papa-nero`](skills/papa-nero/SKILL.md) | Mariano che ferma il set | Escalation pulita, quando il potere piomba sul progetto, chi decide cosa |
 | [`coffee-break`](skills/coffee-break/SKILL.md) | Le pause di Duccio | Carichi per persona, riunioni da tagliare, accordo di squadra |
 | [`qualita-o-morte`](skills/qualita-o-morte/SKILL.md) | Il motto di René | Standard di qualità e controlli per ogni consegna |
-| [`tu-sei-una-macchina`](skills/tu-sei-una-macchina/SKILL.md) | Arianna al primo giorno dello stagista | Inserimento 30-60-90, crescita, feedback, piano di recupero |
+| [`stop-ottima`](skills/stop-ottima/SKILL.md) | René che chiude la scena del film | Feedback specifici, positivi o correttivi, e come riceverli |
+| [`tu-sei-una-macchina`](skills/tu-sei-una-macchina/SKILL.md) | Arianna al primo giorno dello stagista | Inserimento 30-60-90, crescita, piano di recupero |
 | [`non-faccio-testo`](skills/non-faccio-testo/SKILL.md) | Lorenzo, incalzato da Biascica | Sicurezza psicologica: far parlare tutti, anche chi non osa |
 | [`passione-ce-vuole`](skills/passione-ce-vuole/SKILL.md) | Sergio e i contratti | Il patto equo con volontari, stagisti e collaboratori |
 | [`la-vergogna`](skills/la-vergogna/SKILL.md) | La confessione di Lorenzo | Dilemmi etici: cinque prove, alternative, come dire di no |

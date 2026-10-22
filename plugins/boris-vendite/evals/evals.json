@@ -1,0 +1,113 @@
+{
+  "skill_name": "boris-vendite",
+  "note": "Casi di prova del plugin. Il campo 'skill' dice quale skill dovrebbe attivarsi (null = nessuna del plugin; il prefisso boris-pm: indica una skill dell'altro plugin).",
+  "evals": [
+    {
+      "id": 1,
+      "skill": "lopez",
+      "prompt": "lopez, ho un problema: abbiamo aperto le iscrizioni al corso serale di educazione finanziaria per adulti da due settimane e si sono iscritte 6 persone su 40 posti",
+      "files": [],
+      "expected_output": "Il router sceglie facciamo-il-botto e la avvia, con al massimo una domanda.",
+      "expectations": [
+        "Sceglie facciamo-il-botto e la avvia invece di limitarsi a nominarla",
+        "Fa al massimo una domanda prima di partire"
+      ]
+    },
+    {
+      "id": 2,
+      "skill": "facciamo-il-botto",
+      "prompt": "a gennaio lanciamo un ciclo di 4 workshop gratuiti per studenti universitari, vogliamo 120 iscritti, abbiamo instagram, una newsletter da 900 contatti e 300 euro di budget. come facciamo?",
+      "files": [],
+      "expected_output": "Obiettivo in numeri e imbuto con ipotesi dichiarate, al massimo tre canali partendo da quelli propri, varianti di gancio, una misura per passaggio e un test piccolo.",
+      "expectations": [
+        "L'imbuto parte da 120 iscritti e dichiara come ipotesi i tassi di passaggio",
+        "Usa al massimo tre canali e parte da newsletter e instagram prima di quelli a pagamento",
+        "Propone due o tre varianti di gancio con lo stesso invito all'azione",
+        "Prevede un test piccolo e una regola di stop prima di spendere tutto il budget",
+        "Non suggerisce urgenze o scarsità finte"
+      ]
+    },
+    {
+      "id": 3,
+      "skill": "tre-g",
+      "prompt": "voglio trovare 10 aziende del territorio che sponsorizzino il nostro festival di giugno. da dove parto e come le contatto?",
+      "files": [],
+      "expected_output": "Profilo delle aziende giuste, lista corta con voti su affinità, momento e accesso, strada (introduzione prima del freddo), messaggio con richiesta piccola, sequenza di contatti.",
+      "expectations": [
+        "Definisce i criteri per scegliere le aziende prima di elencarle",
+        "Valuta ogni nome su affinità, momento e accesso, o criteri equivalenti",
+        "Il primo messaggio chiede una cosa piccola, non subito la sponsorizzazione",
+        "La sequenza ha tre o quattro contatti con tempi e un punto in cui fermarsi",
+        "Non manda messaggi da sola"
+      ]
+    },
+    {
+      "id": 4,
+      "skill": "dov-e-il-regista",
+      "prompt": "dobbiamo proporre il nostro progetto di educazione finanziaria nelle scuole a una grande banca. conosco solo una persona dell'ufficio comunicazione. come capisco chi decide?",
+      "files": [],
+      "expected_output": "Mappa dei ruoli (decide, influenza, usa, blocca, sostiene, porta), come si compra lì da verificare, piano d'ingresso che parte dalla persona conosciuta senza scavalcarla.",
+      "expectations": [
+        "Distingue chi decide, chi influenza, chi può bloccare e chi sostiene da dentro",
+        "Usa la persona conosciuta come porta o sostegno, senza scavalcarla",
+        "Indica di usare solo informazioni pubbliche e professionali",
+        "Segnala come da verificare budget, tempi e passaggi interni della banca"
+      ]
+    },
+    {
+      "id": 5,
+      "skill": "vado-alla-concorrenza",
+      "prompt": "il comune ci dice che un'altra associazione fa gli stessi laboratori nelle scuole a metà prezzo. come rispondiamo?",
+      "files": [],
+      "expected_output": "Domande per capire cosa c'è dietro l'obiezione, confronto onesto sui criteri del comune, posizionamento, risposta pronta senza sconto come prima mossa.",
+      "expectations": [
+        "Propone di capire cosa c'è dietro l'obiezione prima di rispondere",
+        "Confronta cosa c'è dentro l'offerta (ore, materiali, risultati) prima del prezzo",
+        "Non parla male dell'altra associazione",
+        "Non propone lo sconto come prima risposta"
+      ]
+    },
+    {
+      "id": 6,
+      "skill": "i-pachino",
+      "prompt": "giovedì vado a un evento di networking per imprenditori e non so come attaccare bottone senza sembrare un venditore",
+      "files": [],
+      "expected_output": "Aperture legate al contesto con una domanda, domande per capire, frase ponte, chiusura piccola con un passo concreto, follow-up entro 48 ore.",
+      "expectations": [
+        "Le aperture partono dal contesto dell'evento e finiscono con una domanda",
+        "Sconsiglia di presentarsi con l'elenco dei servizi all'inizio",
+        "C'è una chiusura piccola con un passo concreto",
+        "C'è un messaggio di follow-up da mandare entro due giorni"
+      ]
+    },
+    {
+      "id": 7,
+      "skill": "la-marca",
+      "prompt": "la gente ci confonde sempre con altre associazioni e nessuno si ricorda il nostro nome. cosa sistemiamo?",
+      "files": [],
+      "expected_output": "Raccolta di come vi descrivono oggi, promessa in una frase, differenza con una prova, coerenza dei punti di contatto, tono di voce, prime tre mosse.",
+      "expectations": [
+        "Propone di raccogliere come le persone vi descrivono oggi",
+        "Scrive o propone una promessa in una frase con per chi, cosa e perché",
+        "Controlla la coerenza dei punti di contatto",
+        "Non propone di rifare il logo come prima mossa"
+      ]
+    },
+    {
+      "id": 8,
+      "skill": "boris-pm:smarmella",
+      "prompt": "devo dire allo sponsor principale che l'evento slitta di un mese perché la location non è disponibile",
+      "files": [],
+      "expected_output": "Si attiva smarmella di boris-pm, non una skill di vendita.",
+      "expectations": ["Nessuna skill di boris-vendite viene invocata"]
+    },
+    {
+      "id": 9,
+      "skill": null,
+      "prompt": "traducimi in inglese questo paragrafo della brochure: 'Da dieci anni portiamo l'educazione finanziaria nelle scuole del territorio.'",
+      "files": [],
+      "expected_output": "Nessuna skill del plugin si attiva.",
+      "expectations": ["Nessuna skill di boris-vendite viene invocata"]
+    }
+  ]
+}

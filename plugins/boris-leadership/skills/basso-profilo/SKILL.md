@@ -1,6 +1,6 @@
 ---
 name: basso-profilo
-description: Politica organizzativa e influenza - mappa chi ha potere formale e informale su un progetto o una proposta, cosa gli interessa e da che parte sta, e costruisce un piano per far passare un'idea, trovare alleati e gestire chi si oppone, senza manipolare. Usala quando l'utente dice "come faccio passare questa proposta?", "chi devo convincere?", "il direttivo è diviso", "c'è chi rema contro", "giochi di potere", "mi servono alleati", "mi stanno facendo le scarpe", "devo stare basso profilo?". Non usarla per l'elenco degli stakeholder di un progetto nuovo (usa gli-occhi-del-cuore, se hai boris-pm) né per un conflitto tra due persone (usa adesso-mi-calmo).
+description: Politica organizzativa e influenza - mappa chi ha potere formale e informale su un progetto o una proposta, cosa gli interessa e da che parte sta, e costruisce un piano per far passare un'idea, trovare alleati e gestire chi si oppone, senza manipolare. Usala quando l'utente dice "come faccio passare questa proposta?", "chi devo convincere?", "il direttivo è diviso", "c'è chi rema contro", "giochi di potere", "mi servono alleati", "mi stanno facendo le scarpe", "devo stare basso profilo?". Non usarla per l'elenco degli stakeholder di un progetto nuovo (usa lo-vogliono-loro, se hai boris-pm) né per un conflitto tra due persone (usa adesso-mi-calmo).
 ---
 
 # Basso profilo — potere e influenza
@@ -10,7 +10,7 @@ description: Politica organizzativa e influenza - mappa chi ha potere formale e 
 
 ## Cosa ti serve
 
-Cosa vuole ottenere l'utente, perché conviene, entro quando, chi decide formalmente, le persone che contano e quello che l'utente sa di loro. Se manca quasi tutto, non riempire la mappa di "non lo so": metti in tabella solo quello che sai (un trattino nelle celle vuote), scrivi sotto le tre o quattro cose da scoprire per prime e trasformale nelle prime mosse del piano.
+Cosa vuole ottenere l'utente, perché conviene, entro quando, chi decide formalmente, le persone che contano e quello che l'utente sa di loro. Se manca quasi tutto (non sai cosa si vuole ottenere né con quali vincoli), non riempire la mappa di "non lo so": metti in tabella solo quello che sai (un trattino nelle celle vuote), scrivi sotto le tre o quattro cose da scoprire per prime e trasformale nelle prime mosse del piano.
 
 ## Come lavori
 
@@ -60,4 +60,4 @@ La mappa contiene giudizi su persone: resta in chat e non va nei file condivisi 
 
 ## Tono
 
-Una battuta in apertura o in chiusura, poi lavoro serio. I messaggi per altre persone escono puliti, senza citazioni. Niente supposizioni spacciate per fatti: quello che non si sa di una persona si dice che non si sa. Rispondi nella lingua dell'utente.
+Una battuta in apertura o in chiusura, poi lavoro serio. I messaggi per altre persone escono puliti, senza citazioni. Niente supposizioni spacciate per fatti: quello che non si sa di una persona si dice che non si sa. Rispondi nella lingua dell'utente. La risposta in chat apre con la sintesi operativa (le prime mosse, in poche righe): se il modello di consegna comincia con una sintesi ("In breve", "In sintesi", "Verdetto"), è quella e non si ripete; se no, va in testa al modello. La battuta, se c'è, sta in una riga prima della sintesi o in chiusura. Poi il dettaglio, senza sezioni ripetute né tabelle vuote: una voce del modello senza contenuto si salta, e una tabella fatta quasi solo di spazi da completare diventa l'elenco di cosa raccogliere. Stime, date e soglie proposte da te vanno bene se le dichiari come tali, con il ragionamento: quando il metodo chiede un numero per decidere, proponi una stima dichiarata invece di lasciarlo in bianco. I fatti che mancano (nomi, dati dell'utente, cose successe) restano spazi da completare. Se il dettaglio supera le due pagine (circa 900 parole in tutto, messaggi e domande compresi), consegna la parte che serve adesso e offri il resto.

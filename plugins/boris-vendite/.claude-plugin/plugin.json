@@ -1,0 +1,19 @@
+{
+  "name": "boris-vendite",
+  "displayName": "Boris Vendite",
+  "version": "0.1.0",
+  "description": "7 skill per chi deve trovare clienti, sponsor, partner o iscritti, ispirate alle frasi iconiche di Boris: campagne con facciamo-il-botto, contatti mirati con tre-g, decisori con dov-e-il-regista, concorrenza con vado-alla-concorrenza. Un plugin della Boris School of Management.",
+  "author": {
+    "name": "Alessandro"
+  },
+  "homepage": "https://github.com/alelu-interest/boris-school/tree/main/plugins/boris-vendite",
+  "repository": "https://github.com/alelu-interest/boris-school",
+  "license": "MIT",
+  "keywords": [
+    "sales",
+    "marketing",
+    "lead-generation",
+    "boris",
+    "italiano"
+  ]
+}

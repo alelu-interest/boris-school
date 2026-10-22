@@ -60,7 +60,7 @@
       "skill": "non-faccio-testo",
       "prompt": "nel direttivo parlano sempre il presidente e il tesoriere, gli altri cinque stanno zitti in riunione e poi si lamentano nella chat",
       "files": [],
-      "expected_output": "Diagnosi del silenzio, tre pratiche concrete, frasi per chi guida, questionario anonimo con l'avvertenza sui gruppi piccoli.",
+      "expected_output": "Diagnosi del silenzio, tre pratiche concrete, frasi per chi guida, colloqui individuali al posto del questionario se il gruppo ha meno di otto persone.",
       "expectations": [
         "Tra le pratiche c'è che chi guida parla per ultimo, o un giro di tavolo",
         "Segnala che con sette persone l'anonimato del questionario è fragile",
@@ -147,7 +147,9 @@
       "prompt": "ecco gli appunti della riunione del direttivo di ieri, fammi il verbale",
       "files": [],
       "expected_output": "Si attiva il verbale di boris-pm, non una skill di leadership.",
-      "expectations": ["Nessuna skill di boris-leadership viene invocata"]
+      "expectations": [
+        "Nessuna skill di boris-leadership viene invocata"
+      ]
     },
     {
       "id": 13,
@@ -155,7 +157,22 @@
       "prompt": "scrivimi un post per linkedin sul nostro festival di novembre",
       "files": [],
       "expected_output": "Nessuna skill del plugin si attiva.",
-      "expectations": ["Nessuna skill di boris-leadership viene invocata"]
+      "expectations": [
+        "Nessuna skill di boris-leadership viene invocata"
+      ]
+    },
+    {
+      "id": 14,
+      "skill": "stop-ottima",
+      "prompt": "giulia ha gestito benissimo l'accoglienza dei volontari al festival, ma ha anche risposto male a un fornitore davanti a tutti. voglio dirle entrambe le cose, come faccio?",
+      "files": [],
+      "expected_output": "Due feedback separati, uno positivo specifico e uno correttivo in privato, con lo schema situazione-comportamento-effetto e le prime frasi.",
+      "expectations": [
+        "Il positivo è specifico, non un generico 'brava'",
+        "Il correttivo è da dare in privato e riguarda il comportamento",
+        "Non usa il panino che nasconde la critica tra due complimenti",
+        "Prevede di chiedere la versione di Giulia"
+      ]
     }
   ]
 }

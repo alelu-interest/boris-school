@@ -1,0 +1,162 @@
+{
+  "skill_name": "boris-strategia",
+  "note": "Casi di prova del plugin. Il campo 'skill' dice quale skill dovrebbe attivarsi (null = nessuna del plugin; il prefisso boris-pm: indica una skill dell'altro plugin).",
+  "evals": [
+    {
+      "id": 1,
+      "skill": "la-rete",
+      "prompt": "la rete, devo capire se la nostra associazione ha un futuro: i contributi calano, escono corsi online gratuiti e i soci invecchiano. da dove parto?",
+      "files": [],
+      "expected_output": "Il router sceglie al massimo due skill in un ordine motivato (per esempio paese-di-musichette e caput) e avvia la prima.",
+      "expectations": [
+        "Sceglie al massimo due skill del plugin e motiva l'ordine",
+        "Avvia la prima skill invece di limitarsi a nominarla",
+        "Le domande delle due skill sono in un'unica lista in fondo"
+      ]
+    },
+    {
+      "id": 2,
+      "skill": "molto-americano",
+      "prompt": "vogliamo confrontare il nostro festival con altri tre festival simili in italia e uno in germania per capire dove siamo indietro",
+      "files": [],
+      "expected_output": "Riferimenti motivati, indicatori definiti allo stesso modo, fonte e anno per ogni numero, scarti, cause e pratiche da adattare con un test.",
+      "expectations": [
+        "Ogni indicatore ha una definizione comune a tutti i riferimenti",
+        "Non inventa numeri dei festival: li segna da trovare o con fonte e anno",
+        "Distingue pratiche, risorse e contesto come cause degli scarti",
+        "Propone da una a tre pratiche da adattare, ognuna con un test e una metrica"
+      ]
+    },
+    {
+      "id": 3,
+      "skill": "i-toscani",
+      "prompt": "abbiamo deciso di non fare più il corso al liceo dell'altro quartiere perché l'anno scorso è andata male con una classe e tanto quei ragazzi non sono interessati. ha senso?",
+      "files": [],
+      "expected_output": "Riconosce la generalizzazione da un caso e lo stereotipo sul quartiere, propone dati e il test dell'opposto, riscrive la decisione.",
+      "expectations": [
+        "Segnala la generalizzazione da una sola classe",
+        "Riscrive 'quei ragazzi non sono interessati' come affermazione da verificare su casi precisi",
+        "Propone il test dell'opposto o un dato di confronto",
+        "Non generalizza a sua volta sul quartiere o sui ragazzi"
+      ]
+    },
+    {
+      "id": 4,
+      "skill": "kubrick-incapace",
+      "prompt": "il presidente dice che i social non servono perché l'unico post sponsorizzato che abbiamo fatto non ha portato iscritti. ha ragione?",
+      "files": [],
+      "expected_output": "Affermazione riscritta in modo verificabile, fatti separati dalle opinioni, generalizzazione da un caso, spiegazioni alternative, verdetto con grado di sicurezza.",
+      "expectations": [
+        "Riscrive l'affermazione in modo verificabile",
+        "Individua la generalizzazione da un solo caso",
+        "Propone almeno due spiegazioni alternative",
+        "Dà un verdetto con il grado di sicurezza e cosa lo farebbe cambiare"
+      ]
+    },
+    {
+      "id": 5,
+      "skill": "paese-di-musichette",
+      "prompt": "come cambierà l'educazione finanziaria nelle scuole nei prossimi cinque anni? dobbiamo fare il piano strategico dell'associazione",
+      "files": [],
+      "expected_output": "Scansione per aree con prove o ipotesi dichiarate, griglia impatto-incertezza, quattro scenari, mosse valide in ogni caso e segnali da monitorare.",
+      "expectations": [
+        "Le tendenze hanno fonte e anno, oppure sono dichiarate come ipotesi da verificare",
+        "Costruisce gli scenari su due incertezze critiche",
+        "Indica mosse valide in tutti gli scenari",
+        "Indica i segnali da monitorare"
+      ]
+    },
+    {
+      "id": 6,
+      "skill": "la-concorrenza-siamo-noi",
+      "prompt": "vogliamo entrare nel mercato della formazione aziendale sulla finanza personale per i dipendenti. com'è fatto questo mercato?",
+      "files": [],
+      "expected_output": "Confini del mercato con i sostituti, attori senza quote inventate, cinque forze con livello e motivo, passaggi obbligati, cosa fare.",
+      "expectations": [
+        "Definisce i confini includendo i sostituti",
+        "Non inventa quote di mercato",
+        "Analizza le cinque forze con un livello e un motivo",
+        "Chiude con cosa vuol dire per l'utente e un primo passo"
+      ]
+    },
+    {
+      "id": 7,
+      "skill": "caput",
+      "prompt": "stanno uscendo app con l'intelligenza artificiale che insegnano finanza personale gratis. per noi che facciamo lezioni in presenza nelle scuole è un problema?",
+      "files": [],
+      "expected_output": "Modello attuale, segnali con prove, resistenze interne, opzioni e un primo esperimento protetto.",
+      "expectations": [
+        "Descrive il modello attuale in una riga",
+        "Valuta i segnali uno per uno",
+        "Elenca le resistenze interne",
+        "Propone un primo esperimento con metrica e data"
+      ]
+    },
+    {
+      "id": 8,
+      "skill": "so-not-italian",
+      "prompt": "abbiamo un progetto erasmus+ con partner in spagna, polonia e svezia e le riunioni online sono un disastro, nessuno rispetta le scadenze",
+      "files": [],
+      "expected_output": "Differenze trattate come domande da verificare, regole di lavoro comuni, messaggio in inglese semplice, nessuno stereotipo sui paesi.",
+      "expectations": [
+        "Non attribuisce comportamenti fissi agli spagnoli, ai polacchi o agli svedesi",
+        "Propone regole comuni su scadenze, decisioni e segnalazione dei problemi",
+        "Scrive o propone un messaggio in inglese semplice"
+      ]
+    },
+    {
+      "id": 9,
+      "skill": "re-della-merda",
+      "prompt": "l'associazione ha perso due finanziatori, ha cassa per quattro mesi e metà dei volontari se n'è andata. come la rilanciamo?",
+      "files": [],
+      "expected_output": "Diagnosi con i numeri, mesi di cassa, prima fermare le perdite, nucleo e lista del non-fare, piano a 30-90-365 giorni, punti di uscita, consulente per gli obblighi.",
+      "expectations": [
+        "Mette al primo posto fermare le perdite nei primi 30 giorni",
+        "Indica il nucleo su cui concentrarsi e cosa smettere di fare",
+        "Prevede punti di uscita dichiarati",
+        "Rimanda a un commercialista o un legale per debiti e obblighi"
+      ]
+    },
+    {
+      "id": 10,
+      "skill": "a-catalitico",
+      "prompt": "nel piano di comunicazione abbiamo diviso gli stakeholder in 'amici', 'quelli del comune' e 'i soliti contrari'. va bene così?",
+      "files": [],
+      "expected_output": "Etichette analizzate, segnali di pregiudizio, mappa rifatta su interessi e comportamenti, correzioni.",
+      "expectations": [
+        "Spiega su cosa si basa ogni etichetta e cosa fa decidere",
+        "Ridisegna la mappa su cosa vogliono, cosa temono e cosa hanno fatto",
+        "Sconsiglia nomi ironici o sprezzanti nei documenti"
+      ]
+    },
+    {
+      "id": 11,
+      "skill": "il-darfur",
+      "prompt": "vogliamo scrivere nel bilancio sociale che abbiamo un grande impatto sui giovani del territorio. come lo diciamo?",
+      "files": [],
+      "expected_output": "Teoria del cambiamento, indicatori con valore di partenza, test della facciata sulla frase, cosa si può dire oggi e cosa misurare.",
+      "expectations": [
+        "Segnala che 'grande impatto' non è verificabile così com'è",
+        "Distingue i risultati immediati dai cambiamenti per le persone",
+        "Gli indicatori hanno un valore di partenza e un obiettivo",
+        "Indica cosa si può dichiarare oggi con le prove disponibili"
+      ]
+    },
+    {
+      "id": 12,
+      "skill": "boris-pm:cagna-maledetta",
+      "prompt": "rileggi senza pietà la presentazione per il bando prima che la mandiamo domani",
+      "files": [],
+      "expected_output": "Si attiva la revisione di boris-pm, non una skill di strategia.",
+      "expectations": ["Nessuna skill di boris-strategia viene invocata"]
+    },
+    {
+      "id": 13,
+      "skill": null,
+      "prompt": "traducimi in inglese questa mail per il partner svedese: 'ciao, ci vediamo giovedì alle 10 per la riunione'",
+      "files": [],
+      "expected_output": "Una semplice traduzione: nessuna skill del plugin si attiva.",
+      "expectations": ["Nessuna skill di boris-strategia viene invocata"]
+    }
+  ]
+}

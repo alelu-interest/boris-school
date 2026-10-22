@@ -1,0 +1,148 @@
+{
+  "skill_name": "boris-prodotto",
+  "note": "Casi di prova del plugin. Il campo 'skill' dice quale skill dovrebbe attivarsi (null = nessuna del plugin; il prefisso boris-pm: indica una skill dell'altro plugin).",
+  "evals": [
+    {
+      "id": 1,
+      "skill": "medical-dimension",
+      "prompt": "medical dimension, abbiamo un'app per prenotare le aule studio: gli studenti si iscrivono ma poi non prenotano, e il team vuole aggiungere una chat con l'intelligenza artificiale. da dove parto?",
+      "files": [],
+      "expected_output": "Il router sceglie al massimo due skill in ordine motivato (per esempio guarda-in-camera e troppo-frizzante) e avvia la prima.",
+      "expectations": [
+        "Sceglie al massimo due skill del plugin e motiva l'ordine",
+        "Avvia la prima skill invece di limitarsi a nominarla",
+        "Le domande che servono sono raccolte in un'unica lista in fondo"
+      ]
+    },
+    {
+      "id": 2,
+      "skill": "la-locura",
+      "prompt": "vogliamo lanciare un abbonamento a sorpresa di libri usati, una scatola al mese a 15 euro. in città nessuno lo fa. è un'idea innovativa?",
+      "files": [],
+      "expected_output": "Idea in una riga con il 'al posto di', per chi è nuova, lavoro da fare, valore, costo del cambio, verdetto.",
+      "expectations": [
+        "Scrive l'idea nella forma 'per chi, cosa fa, al posto di cosa'",
+        "Distingue se è nuova per il mercato, per queste persone o solo per loro",
+        "Non tratta 'nessuno lo fa' come prova di valore",
+        "Chiude con un verdetto tra locura vera, da provare, locura di facciata"
+      ]
+    },
+    {
+      "id": 3,
+      "skill": "viva-la-merda",
+      "prompt": "il nostro gestionale per le iscrizioni ai corsi ha accumulato pezze: export a mano su excel ogni lunedì, campi duplicati, un modulo vecchio che nessuno osa toccare. il team è sempre più lento. come ne usciamo?",
+      "files": [],
+      "expected_output": "Inventario dei compromessi con costo e tendenza, classifica, piano con quota di capacità e i primi tre da ripagare.",
+      "expectations": [
+        "Per ogni compromesso indica cosa costa oggi, stimandolo se serve e dichiarandolo",
+        "Classifica i compromessi in da ripagare subito, da pianificare, da accettare",
+        "Propone una quota di capacità o un ciclo dedicato, con i primi tre e cosa vuol dire 'ripagato'",
+        "Non propone di rifare tutto da zero senza numeri"
+      ]
+    },
+    {
+      "id": 4,
+      "skill": "l-orafo",
+      "prompt": "rivedi i testi del nostro modulo di iscrizione: il bottone dice 'Procedi', l'errore dice 'Errore 403: input non valido' e il titolo della pagina è 'Onboarding utente'",
+      "files": [],
+      "expected_output": "Tabella prima e dopo con il perché, varianti per i testi chiave, glossario.",
+      "expectations": [
+        "Il bottone diventa un verbo con un oggetto",
+        "Il messaggio d'errore dice cosa è successo e cosa fare, senza il codice da solo",
+        "'Onboarding utente' viene sostituito da parole comprensibili a chi si iscrive",
+        "Propone almeno due varianti per un testo chiave"
+      ]
+    },
+    {
+      "id": 5,
+      "skill": "guarda-in-camera",
+      "prompt": "gli utenti della nostra app per volontari non trovano dove segnare la loro disponibilità. voglio fare dei test con persone vere, come li organizzo?",
+      "files": [],
+      "expected_output": "Piano del test con domande, cinque persone del pubblico vero, compiti scritti come obiettivi, conduzione senza aiutare, scheda di osservazione.",
+      "expectations": [
+        "Propone circa cinque persone del pubblico vero, non colleghi",
+        "I compiti sono scritti come obiettivi senza le parole dell'interfaccia",
+        "Dice di non aiutare la persona durante il test",
+        "Prevede il consenso per eventuali registrazioni"
+      ]
+    },
+    {
+      "id": 6,
+      "skill": "merda-vecchia",
+      "prompt": "il direttivo vuole la versione 2 del sito: nuova grafica, nuovi colori, stesse pagine. dicono che così attiriamo più soci. è un vero miglioramento?",
+      "files": [],
+      "expected_output": "Prova del restyling, alternative e criteri di scelta, differenza che conta, verdetto.",
+      "expectations": [
+        "Dice che cambiare solo grafica e colori è un restyling, e lo chiama così",
+        "Chiede o individua i criteri su cui i potenziali soci scelgono",
+        "Indica cosa dovrebbe cambiare perché diventi un miglioramento reale"
+      ]
+    },
+    {
+      "id": 7,
+      "skill": "puzza-di-capolavoro",
+      "prompt": "vogliamo fare un corso online a pagamento di educazione finanziaria per genitori. siamo sicuri che piacerà. prima di investire 5000 euro come lo verifichiamo?",
+      "files": [],
+      "expected_output": "Ipotesi scritte, la più rischiosa, una prova economica, soglie di successo e fallimento decise prima, cosa fare in ogni caso.",
+      "expectations": [
+        "Scrive le ipotesi nella forma 'crediamo che chi farà cosa perché'",
+        "Propone una prova che costa molto meno di 5000 euro (pagina di prova, preordine, pilota)",
+        "Fissa soglie numeriche di successo e fallimento prima della prova",
+        "Non usa 'lo compreresti?' come prova"
+      ]
+    },
+    {
+      "id": 8,
+      "skill": "comicita-matematica",
+      "prompt": "abbiamo cambiato il titolo della pagina di iscrizione e le iscrizioni sono salite dal 4% al 5% in una settimana con 600 visite. possiamo dire che funziona?",
+      "files": [],
+      "expected_output": "Lettura onesta: con 600 visite la differenza non è conclusiva; un prima-e-dopo non dimostra la causa; come impostare un test.",
+      "expectations": [
+        "Dice che con 600 visite la differenza tra 4% e 5% non è conclusiva",
+        "Segnala che un confronto prima-dopo senza gruppo di controllo non dimostra la causa",
+        "Propone come impostare un test o cosa guardare per decidere"
+      ]
+    },
+    {
+      "id": 9,
+      "skill": "come-se-dice",
+      "prompt": "ho 40 recensioni e 15 trascrizioni di interviste ai clienti. voglio capire con che parole descrivono il problema per riscrivere la home del sito",
+      "files": [],
+      "expected_output": "Metodo per raccogliere frasi testuali, temi, conteggi, glossario e dove usarle; senza materiale incollato, il modello di lavoro.",
+      "expectations": [
+        "Chiede o usa frasi testuali, non riassunti",
+        "Organizza per temi e conta le ripetizioni",
+        "Prevede un glossario parola del team → parola dei clienti",
+        "Non inventa citazioni di clienti"
+      ]
+    },
+    {
+      "id": 10,
+      "skill": "troppo-frizzante",
+      "prompt": "in associazione abbiamo tre progetti 'innovativi': un chatbot, un hackathon annuale e un'app in realtà aumentata per il museo. nessuno sa dire se servono. come li valutiamo?",
+      "files": [],
+      "expected_output": "Test del teatro per ciascuna iniziativa, verdetto, cosa manca a quelle da raddrizzare, messaggio per chi le ha lanciate.",
+      "expectations": [
+        "Applica le stesse domande del test a tutte e tre le iniziative",
+        "Dà un verdetto per ciascuna tra vera, da raddrizzare, teatro",
+        "Per quelle da raddrizzare indica metrica, responsabile e data per decidere"
+      ]
+    },
+    {
+      "id": 11,
+      "skill": "boris-pm:non-sento-l-africa",
+      "prompt": "non sento l'africa in questo progetto: facciamo una newsletter mensile ma non so più a chi serva",
+      "files": [],
+      "expected_output": "Si attiva la prova del perché di boris-pm, non una skill di boris-prodotto.",
+      "expectations": ["Nessuna skill di boris-prodotto viene invocata"]
+    },
+    {
+      "id": 12,
+      "skill": null,
+      "prompt": "traducimi in inglese questa mail per un fornitore: 'Gentile Marco, le confermo l'ordine per giovedì'",
+      "files": [],
+      "expected_output": "Nessuna skill del plugin si attiva.",
+      "expectations": ["Nessuna skill di boris-prodotto viene invocata"]
+    }
+  ]
+}

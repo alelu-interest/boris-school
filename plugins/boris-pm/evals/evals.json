@@ -6,7 +6,10 @@
       "id": 1,
       "skill": "non-se-ne-esce",
       "prompt": "ecco gli appunti della riunione di ieri sul festival, sono in appunti.txt. mi fai il verbale?",
-      "files": ["evals/files/appunti-festival.txt", "evals/files/registro-festival.md"],
+      "files": [
+        "evals/files/appunti-festival.txt",
+        "evals/files/registro-festival.md"
+      ],
       "expected_output": "Verbale con deciso, da fare, aperto e parcheggio; registro aggiornato con ID che continuano da A-004; verbale salvato in boris/verbali/.",
       "expectations": [
         "Tra le decisioni c'è solo il tema 'Ponti'; il prezzo dei biglietti è tra le questioni aperte, non tra le decisioni",
@@ -125,7 +128,9 @@
       "prompt": "scrivimi una funzione python che calcola la media mobile su 7 giorni di una lista di vendite",
       "files": [],
       "expected_output": "Nessuna skill del pacchetto si attiva.",
-      "expectations": ["Nessuna skill di boris-pm viene invocata"]
+      "expectations": [
+        "Nessuna skill di boris-pm viene invocata"
+      ]
     },
     {
       "id": 10,
@@ -133,7 +138,9 @@
       "prompt": "mi consigli 3 episodi di Boris da far vedere a un amico che non l'ha mai vista?",
       "files": [],
       "expected_output": "Nessuna skill del pacchetto si attiva: parlare della serie non è lavoro da PM.",
-      "expectations": ["Nessuna skill di boris-pm viene invocata"]
+      "expectations": [
+        "Nessuna skill di boris-pm viene invocata"
+      ]
     },
     {
       "id": 11,
@@ -160,6 +167,84 @@
         "C'è una sezione su cosa l'app non fa",
         "C'è il rapporto basiti con quanti ne ha trovati e quali restano aperti",
         "Non inventa numeri di utenti o di università"
+      ]
+    },
+    {
+      "id": 13,
+      "skill": "ritardo-mostruoso",
+      "prompt": "il convegno è il 5 dicembre e siamo indietro: la sala non è ancora confermata, il programma dei relatori è fermo perché aspettiamo due conferme e la grafica non può partire senza programma. come recuperiamo?",
+      "files": [],
+      "expected_output": "Ritardo misurato sulla data finale, percorso critico (sala, relatori, programma, grafica), leve con giorni recuperati e costi, piano ripianificato.",
+      "expectations": [
+        "Individua la catena relatori → programma → grafica come percorso critico",
+        "Propone almeno due leve diverse con l'effetto sui giorni",
+        "Non sposta tutte le date della stessa quantità",
+        "Indica chi deve approvare il piano"
+      ]
+    },
+    {
+      "id": 14,
+      "skill": "lo-vogliono-loro",
+      "prompt": "per la rassegna estiva abbiamo il comune che dà il patrocinio, uno sponsor bancario, la parrocchia che ci presta il cortile e i residenti che si lamentano del rumore. chi coinvolgo e come?",
+      "files": [],
+      "expected_output": "Tabella stakeholder con interessi e timori, matrice potere e interesse, piano di coinvolgimento con un responsabile per ciascuno.",
+      "expectations": [
+        "I residenti compaiono come stakeholder, non solo gli enti",
+        "Ogni stakeholder ha una persona che tiene il rapporto",
+        "Segnala il possibile conflitto tra rumore e programma serale"
+      ]
+    },
+    {
+      "id": 15,
+      "skill": "quanto-ce-costa",
+      "prompt": "ho tre preventivi per il service audio-luci: 1.800 euro iva esclusa, 2.100 iva inclusa e 1.950 con trasporto a parte. quale conviene? e fammi lo schema del budget dell'evento",
+      "files": [],
+      "expected_output": "Confronto dei preventivi riportati alla stessa base (IVA e trasporto), schema del budget con fonti e margine per imprevisti.",
+      "expectations": [
+        "Riporta i tre preventivi alla stessa base IVA prima di confrontarli",
+        "Segnala che il trasporto del terzo va quotato",
+        "Il budget ha una voce separata per gli imprevisti",
+        "Non inventa cifre per le voci senza preventivo"
+      ]
+    },
+    {
+      "id": 16,
+      "skill": "io-faccio-il-limoncello",
+      "prompt": "il progetto della app per i soci va avanti da un anno, abbiamo speso 8.000 euro, la usano in 12. il direttivo dice che ormai abbiamo investito troppo per mollare. che facciamo?",
+      "files": [],
+      "expected_output": "Criteri decisi prima, avvertenza sui costi già sostenuti, opzioni con costi e conseguenze, raccomandazione e uscita ordinata se si chiude.",
+      "expectations": [
+        "Dice esplicitamente che gli 8.000 euro già spesi non devono decidere",
+        "Propone criteri prima delle opzioni",
+        "Considera almeno tre opzioni tra continuare, ridurre, pausa, cedere, chiudere",
+        "Se suggerisce di chiudere, prepara chi avvisare"
+      ]
+    },
+    {
+      "id": 17,
+      "skill": "fa-un-ponte",
+      "prompt": "vogliamo fare una partnership con un'altra associazione del quartiere per un doposcuola: loro hanno gli spazi, noi i volontari. come la impostiamo perché non finisca a litigare?",
+      "files": [],
+      "expected_output": "Perché insieme, scambio chiaro tra le due associazioni, bozza delle voci dell'accordo con quelle da definire, referenti, incontro fisso, controllo a date fisse e via d'uscita.",
+      "expectations": [
+        "Scrive cosa dà e cosa riceve ciascuna delle due associazioni",
+        "Propone le voci di un accordo scritto, compresi chi decide e come si esce",
+        "Indica un referente per parte e un momento fisso di controllo",
+        "Non inventa fatti sull'altra associazione: quello che non si sa resta da verificare"
+      ]
+    },
+    {
+      "id": 18,
+      "skill": "de-botto-senza-senso",
+      "prompt": "da gennaio passiamo dai fogli excel a un gestionale online per soci e presenze. metà dei volontari ha più di sessant'anni e già si lamenta. come lo introduciamo?",
+      "files": [],
+      "expected_output": "Il perché in due righe, chi è toccato e cosa teme, un percorso con prova su un gruppo piccolo, formazione pratica e periodo con excel e gestionale insieme, referenti, risposta alle resistenze, testo dell'annuncio e segnali per capire se funziona.",
+      "expectations": [
+        "Parte dal perché del cambiamento, detto in modo comprensibile per i volontari",
+        "Prevede una prova su un gruppo piccolo e un periodo con il vecchio e il nuovo insieme, con una data di spegnimento",
+        "Tratta le lamentele come informazioni e distingue chi non sa, chi non può e chi non vuole",
+        "Consegna un messaggio di annuncio pulito, senza battute né citazioni",
+        "Non usa l'età come etichetta: parla di bisogni di formazione, non di persone"
       ]
     }
   ]

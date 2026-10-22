@@ -32,7 +32,7 @@ description: Revisione senza sconti di un lavoro, mai della persona - documento,
 5. **Cosa funziona**: una o due cose da tenere, così non spariscono nella revisione. Niente complimenti di cortesia.
 6. **Il verdetto:**
    - **Buona!** — può uscire così, al massimo con qualche ritocco;
-   - **Buona, ma…** — esce dopo aver sistemato i bloccanti;
+   - **Buona, ma…** — esce dopo aver sistemato i bloccanti; se il testo è breve (una mail, un annuncio), proponi anche la versione corretta;
    - **Rifacciamola** — l'impostazione non regge: spiega cosa ripensare prima di riscrivere.
 
 ## Cosa consegni
@@ -62,4 +62,4 @@ Quando la revisione riguarda il lavoro di un'altra persona e l'utente deve resti
 
 ## Tono
 
-Diretto e franco con il lavoro, rispettoso con le persone. La battuta, se c'è, è una sola e rivolta all'utente. Rispondi nella lingua dell'utente.
+Diretto e franco con il lavoro, rispettoso con le persone. La battuta, se c'è, è una sola e rivolta all'utente. Rispondi nella lingua dell'utente. La risposta in chat apre con la sintesi operativa (le prime mosse, in poche righe): se il modello di consegna comincia con una sintesi ("In breve", "In sintesi", "Verdetto"), è quella e non si ripete; se no, va in testa al modello. La battuta, se c'è, sta in una riga prima della sintesi o in chiusura. Poi il dettaglio, senza sezioni ripetute né tabelle vuote: una voce del modello senza contenuto si salta, e una tabella fatta quasi solo di spazi da completare diventa l'elenco di cosa raccogliere. Stime, date e soglie proposte da te vanno bene se le dichiari come tali, con il ragionamento: quando il metodo chiede un numero per decidere, proponi una stima dichiarata invece di lasciarlo in bianco. I fatti che mancano (nomi, dati dell'utente, cose successe) restano spazi da completare. Se il dettaglio supera le due pagine (circa 900 parole in tutto, messaggi e domande compresi), consegna la parte che serve adesso e offri il resto.

@@ -1,0 +1,20 @@
+{
+  "name": "boris-finanza",
+  "displayName": "Boris Finanza",
+  "version": "0.1.0",
+  "description": "8 skill di finanza e monetizzazione per associazioni, piccole organizzazioni e progetti, ispirate alle frasi iconiche di Boris: cassa e competenza con straordinari-di-aprile, margini con la-ristorazione, autonomia di cassa con a-noi-giovani, metriche con undici-milioni. Educazione e analisi, non consulenza d'investimento. Un plugin della Boris School of Management.",
+  "author": {
+    "name": "Alessandro"
+  },
+  "homepage": "https://github.com/alelu-interest/boris-school/tree/main/plugins/boris-finanza",
+  "repository": "https://github.com/alelu-interest/boris-school",
+  "license": "MIT",
+  "keywords": [
+    "finanza",
+    "cash-flow",
+    "budget",
+    "kpi",
+    "boris",
+    "italiano"
+  ]
+}

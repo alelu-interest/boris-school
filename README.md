@@ -7,17 +7,19 @@ Ogni frase della serie dà il nome a una competenza professionale, con sotto un 
 
 ## I plugin
 
-| Plugin | Area | Skill | Stato |
-|---|---|---|---|
-| [`boris-pm`](plugins/boris-pm/) | Program, project e product management | 17 | ✅ disponibile, 0.1.0 |
-| [`boris-leadership`](plugins/boris-leadership/) | Management e leadership: persone, conflitti, crescita, selezione | 11 | ✅ disponibile, 0.1.0 |
-| `boris-prodotto` | Innovazione, UX, validazione, analisi | — | 🔜 |
-| `boris-vendite` | Lead, vendite e marketing | — | 🔜 |
-| `boris-strategia` | Perché, strategia e pensiero critico | — | 🔜 |
-| `boris-finanza` | Finanza e monetizzazione | — | 🔜 |
-| `boris-dati` | Dati e automazione | — | 🔜 |
+Sette plugin, 79 skill. Ognuno ha una porta d'ingresso che capisce la situazione e manda alla skill giusta.
 
-Il piano completo — 64 frasi candidate, a quale skill vanno, quali sono già verificate — è nel [catalogo](docs/catalogo.md).
+| Plugin | Area | Skill | Porta d'ingresso | Versione |
+|---|---|---|---|---|
+| [`boris-pm`](plugins/boris-pm/) | Project e product management: far partire, eseguire, comunicare, chiudere | 23 | `boris` | 0.2.0 |
+| [`boris-leadership`](plugins/boris-leadership/) | Persone e squadre: conflitti, feedback, crescita, selezione | 12 | `dottor-cane` | 0.2.0 |
+| [`boris-prodotto`](plugins/boris-prodotto/) | Prodotto: innovazione, UX, validazione, esperimenti | 10 | `medical-dimension` | 0.1.0 |
+| [`boris-vendite`](plugins/boris-vendite/) | Lead, vendite e marketing | 7 | `lopez` | 0.1.0 |
+| [`boris-strategia`](plugins/boris-strategia/) | Strategia e pensiero critico | 11 | `la-rete` | 0.1.0 |
+| [`boris-finanza`](plugins/boris-finanza/) | Conti, cassa, margini e metriche | 8 | `sergio` | 0.1.0 |
+| [`boris-dati`](plugins/boris-dati/) | Dati e automazione | 8 | `itala` | 0.1.0 |
+
+Da dove viene ogni nome, con la verifica e l'episodio di ogni frase, è nel [catalogo](docs/catalogo.md). Come sono state provate le skill è in [docs/prove.md](docs/prove.md).
 
 ## Installazione
 
@@ -31,6 +33,8 @@ Dentro Claude Code:
 /plugin install boris-leadership@boris-school
 ```
 
+Gli altri si installano allo stesso modo: `boris-prodotto`, `boris-vendite`, `boris-strategia`, `boris-finanza`, `boris-dati`, sempre seguiti da `@boris-school`.
+
 I plugin funzionano anche da soli; installati insieme, si rimandano l'un l'altro le situazioni giuste.
 
 Per provare un plugin da una copia locale, senza installarlo:
@@ -43,10 +47,10 @@ claude --plugin-dir ./plugins/boris-pm
 
 Su Claude.ai le skill si caricano una alla volta, come file zip:
 
-1. dalla [pagina delle release](https://github.com/alelu-interest/boris-school/releases) scarica lo zip del plugin che ti interessa (`boris-pm.zip` o `boris-leadership.zip`) e aprilo: dentro c'è una cartella con uno zip per ogni skill. In alternativa creali tu con `scripts/impacchetta.sh`: finiscono in `dist/<plugin>/`;
+1. dalla [pagina delle release](https://github.com/alelu-interest/boris-school/releases) scarica lo zip del plugin che ti interessa (per esempio `boris-pm.zip`) e aprilo: dentro c'è una cartella con uno zip per ogni skill. In alternativa creali tu con `scripts/impacchetta.sh`: finiscono in `dist/<plugin>/`;
 2. nelle impostazioni di Claude, nella sezione delle skill, carica uno zip per ogni skill che vuoi usare.
 
-Le versioni prendono il nome dalle stagioni della fiction: la prima è *Gli occhi del cuore*.
+Le versioni prendono il nome dalle stagioni della fiction: la prima è *Gli occhi del cuore*, la seconda *Gli occhi del cuore 2*.
 
 ## Le regole della scuola
 

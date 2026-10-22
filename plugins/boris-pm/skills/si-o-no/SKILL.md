@@ -18,6 +18,8 @@ description: Solleciti e cose in sospeso - costruisce la lista "chi deve cosa a 
 1. **La lista "chi deve cosa a chi"**, raggruppata per persona:
 
    | Persona | Cosa | Promesso per | Ritardo | Cosa blocca | Ultimo sollecito |
+
+   Se una data promessa non c'è, scrivi "nessuna data": il primo messaggio chiede una data, non un sollecito. Per le cose che devi tu non serve un sollecito: una riga con cosa consegnare e a chi.
    |---|---|---|---|---|---|
 
    Mettici anche **cosa deve l'utente agli altri**: spesso il collo di bottiglia è proprio chi gestisce il progetto.
@@ -25,7 +27,7 @@ description: Solleciti e cose in sospeso - costruisce la lista "chi deve cosa a 
 3. **Scegli il livello di sollecito** per ogni voce:
    - **Livello 1, promemoria gentile** (prima della scadenza o il giorno stesso): cordiale, specifico, facile da soddisfare;
    - **Livello 2, sollecito chiaro** (a scadenza passata): cosa serve, perché adesso è importante, una nuova data proposta, un aiuto offerto;
-   - **Livello 3, escalation** (scaduto più volte, o blocca una tappa): coinvolge chi ha l'autorità (capo, referente, sponsor), con i fatti, senza colpe, con delle opzioni;
+   - **Livello 3, escalation** (scaduto più volte, o blocca una tappa vicina e i livelli 1 e 2 non hanno più tempo per funzionare): coinvolge chi ha l'autorità (capo, referente, sponsor), con i fatti, senza colpe, con delle opzioni;
    - **Sblocco**, se la persona è chiaramente in difficoltà: riduci la richiesta (un pezzo, una bozza, una telefonata di dieci minuti).
 4. **Scrivi i messaggi** adatti al canale (WhatsApp: due o tre righe; mail: oggetto chiaro e una sola richiesta). Regole:
    - una richiesta per messaggio, a cui si risponde sì o no, con una data: "Mi mandi il preventivo del service audio entro giovedì 24?", non "Novità?";
@@ -49,4 +51,4 @@ description: Solleciti e cose in sospeso - costruisce la lista "chi deve cosa a 
 
 ## Tono
 
-Una battuta in apertura o in chiusura (Mariano Giusti approverebbe), poi lavoro serio. I messaggi sono per altre persone: escono puliti, cordiali e fermi. Rispondi nella lingua dell'utente; scrivi i messaggi nella lingua di chi li riceve.
+Una battuta in apertura o in chiusura (Mariano Giusti approverebbe), poi lavoro serio. I messaggi sono per altre persone: escono puliti, cordiali e fermi. Rispondi nella lingua dell'utente; scrivi i messaggi nella lingua di chi li riceve. La risposta in chat apre con la sintesi operativa (le prime mosse, in poche righe): se il modello di consegna comincia con una sintesi ("In breve", "In sintesi", "Verdetto"), è quella e non si ripete; se no, va in testa al modello. La battuta, se c'è, sta in una riga prima della sintesi o in chiusura. Poi il dettaglio, senza sezioni ripetute né tabelle vuote: una voce del modello senza contenuto si salta, e una tabella fatta quasi solo di spazi da completare diventa l'elenco di cosa raccogliere. Stime, date e soglie proposte da te vanno bene se le dichiari come tali, con il ragionamento: quando il metodo chiede un numero per decidere, proponi una stima dichiarata invece di lasciarlo in bianco. I fatti che mancano (nomi, dati dell'utente, cose successe) restano spazi da completare. Se il dettaglio supera le due pagine (circa 900 parole in tutto, messaggi e domande compresi), consegna la parte che serve adesso e offri il resto.

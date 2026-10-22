@@ -75,6 +75,30 @@ Poi qualche regola da precisare:
 - `passione-ce-vuole`: da dove partono le date; il messaggio va alla persona interessata.
 - `tu-sei-una-macchina`: l'ordine del colloquio su un calo di rendimento; il piano portato come bozza da completare insieme.
 
-## Cosa resta da fare
+## Terza tornata (2026-10-22, versione 0.2.0)
 
-Queste correzioni non sono ancora state riprovate: alla prossima tornata vanno rilanciati tutti i casi. Le risposte restano lunghe, spesso più di una pagina: vale la pena provare una regola sulla lunghezza.
+Tutti i casi rilanciati sulle skill corrette, più il caso 14 per la nuova `stop-ottima`, con tutti e sette i plugin della scuola installati insieme (79 skill tra cui scegliere).
+
+| # | Skill attesa | Scelta | Criteri |
+|---|---|---|---|
+| 1 | `adesso-mi-calmo` | giusta | 5/5 |
+| 2 | `papa-nero` | giusta | 4/4 |
+| 3 | `coffee-break` | giusta | 4/4 |
+| 4 | `tu-sei-una-macchina` | giusta | 4/4 |
+| 5 | `non-faccio-testo` | giusta | 3/3 |
+| 6 | `passione-ce-vuole` | giusta | 4/4 |
+| 7 | `la-vergogna` | giusta | 4/4 |
+| 8 | `grandi-attori` | giusta | 4/4 |
+| 9 | `basso-profilo` | giusta | 3/3 |
+| 10 | `qualita-o-morte` | giusta | 3/3 |
+| 11 | `dottor-cane` | giusta | 2/2 |
+| 12 | `boris-pm:non-se-ne-esce` | giusta | 1/1 |
+| 13 | nessuna | giusta | 1/1 |
+| 14 | `stop-ottima` | giusta | 4/4 |
+| | **Totale** | **14/14** | **46/46** |
+
+Con 79 skill invece di 28 la scelta non è peggiorata: i rimandi nelle descrizioni hanno tenuto separate le skill vicine (`basso-profilo` e `lo-vogliono-loro`, `stop-ottima` e `tu-sei-una-macchina`).
+
+**Le segnalazioni** della terza tornata erano quasi tutte comuni alla scuola, e sono state corrette in tutte le skill: la battuta e la sintesi in apertura che si contendevano la prima riga, le tabelle con quasi solo spazi da completare, quando una proposta di data o di soglia conta come dato inventato, quando i dati mancano "quasi tutti", e la lunghezza, ora fissata a circa 900 parole. Nelle singole skill: la sezione "I segnali di sfruttamento" in `passione-ce-vuole`, gli indispensabili del livello minimo in `qualita-o-morte`, il rimando a `lo-vogliono-loro` in `basso-profilo`, e il caso 5 di `evals.json` allineato alla regola sull'anonimato.
+
+Il resoconto di tutta la scuola è in [docs/prove.md](../../../docs/prove.md).

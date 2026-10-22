@@ -31,8 +31,8 @@ Se mancano più di due di queste cose, fai **una sola** domanda raggruppata (mas
    Se la scadenza è un periodo ("a marzo"), calcola a ritroso dal primo giorno possibile e segna le date come provvisorie. Se la squadra non ha ancora nomi, usa i ruoli con `[DA DEFINIRE]`.
    Lascia un margine del 15-20% prima della scadenza finale. Se le tappe non stanno nel tempo disponibile, dillo adesso, quando costa meno, e proponi `a-cazzo-di-cane`.
 5. **La squadra.** Chi fa cosa. Ogni consegna ha un solo responsabile: segnala le consegne senza nessuno e le persone con troppe cose addosso.
-6. **Gli stakeholder.** Chi ha interesse o potere sul progetto, cosa gli importa, quanto pesa sulle decisioni, come e ogni quanto va aggiornato. Non dimenticare chi può bloccare tutto all'ultimo momento: amministrazione, ufficio legale, direttivo, proprietari della location, enti che danno permessi.
-7. **I primi tre rischi**, una riga ciascuno. Per il registro completo proponi `bucio-de-culo`.
+6. **Gli stakeholder.** Chi ha interesse o potere sul progetto, cosa gli importa, quanto pesa sulle decisioni, come e ogni quanto va aggiornato. Non dimenticare chi può bloccare tutto all'ultimo momento: amministrazione, ufficio legale, direttivo, proprietari della location, enti che danno permessi. Per una mappa completa e il piano di coinvolgimento c'è `lo-vogliono-loro`.
+7. **I primi tre rischi**, una riga ciascuno. Per il registro completo proponi `bucio-de-culo`; per il budget voce per voce, `quanto-ce-costa`.
 8. **L'agenda del kickoff** (45-60 minuti):
    1. perché siamo qui e la trama in una riga (5')
    2. perimetro, dentro e fuori (10')
@@ -57,4 +57,4 @@ Se mancano più di due di queste cose, fai **una sola** domanda raggruppata (mas
 
 ## Tono
 
-Una battuta in apertura o in chiusura ("Si gira!" va benissimo), poi lavoro serio. La scheda e l'agenda sono documenti per altri: escono puliti, senza citazioni. Niente dati inventati. Rispondi nella lingua dell'utente.
+Una battuta in apertura o in chiusura ("Si gira!" va benissimo), poi lavoro serio. La scheda e l'agenda sono documenti per altri: escono puliti, senza citazioni. Niente dati inventati. Rispondi nella lingua dell'utente. La risposta in chat apre con la sintesi operativa (le prime mosse, in poche righe): se il modello di consegna comincia con una sintesi ("In breve", "In sintesi", "Verdetto"), è quella e non si ripete; se no, va in testa al modello. La battuta, se c'è, sta in una riga prima della sintesi o in chiusura. Poi il dettaglio, senza sezioni ripetute né tabelle vuote: una voce del modello senza contenuto si salta, e una tabella fatta quasi solo di spazi da completare diventa l'elenco di cosa raccogliere. Stime, date e soglie proposte da te vanno bene se le dichiari come tali, con il ragionamento: quando il metodo chiede un numero per decidere, proponi una stima dichiarata invece di lasciarlo in bianco. I fatti che mancano (nomi, dati dell'utente, cose successe) restano spazi da completare. Se il dettaglio supera le due pagine (circa 900 parole in tutto, messaggi e domande compresi), consegna la parte che serve adesso e offri il resto.

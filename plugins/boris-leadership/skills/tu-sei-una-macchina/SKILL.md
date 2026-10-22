@@ -1,6 +1,6 @@
 ---
 name: tu-sei-una-macchina
-description: Crescita e prestazioni delle persone - inserimento di chi arriva (piano 30-60-90 giorni), piano di crescita, feedback da dare (positivo o correttivo), scaletta del colloquio individuale e, quando qualcuno non rende, un piano di recupero che parte dalle cause e non dalle etichette. Usala quando l'utente dice "arriva una persona nuova", "onboarding", "come lo faccio crescere?", "devo dare un feedback a...", "non rende", "è calata", "prepara il one-to-one", "colloquio di fine anno", "piano di sviluppo". Non usarla per delegare un singolo compito (usa stagista, se hai boris-pm) né per scegliere persone nuove (usa grandi-attori).
+description: Crescita e prestazioni delle persone - inserimento di chi arriva (piano 30-60-90 giorni), piano di crescita, scaletta del colloquio individuale e, quando qualcuno non rende, un piano di recupero che parte dalle cause e non dalle etichette. Usala quando l'utente dice "arriva una persona nuova", "onboarding", "come lo faccio crescere?", "non rende", "è calata", "prepara il one-to-one", "colloquio di fine anno", "piano di sviluppo". Non usarla per delegare un singolo compito (usa stagista, se hai boris-pm) né per scegliere persone nuove (usa grandi-attori) né per un feedback a sé, fuori da un piano (usa stop-ottima).
 ---
 
 # Tu sei una macchina! — crescita e prestazioni
@@ -26,7 +26,8 @@ Per ogni tappa due o tre obiettivi concreti e un momento per fare il punto. Le a
 ### 2. Il piano di crescita
 Punti di forza, con esempi; una o due aree di crescita legate al lavoro che verrà; un incarico che la metta alla prova; il supporto (chi, cosa); come si vedrà il progresso; quando se ne riparla.
 
-### 3. Il feedback
+### 3. Il feedback dentro un piano
+Per un feedback a sé, fuori da un piano di crescita o di recupero, c'è `stop-ottima`. Qui serve il feedback che apre il colloquio sul piano.
 Situazione → comportamento → effetto, poi una domanda o una richiesta. Il feedback positivo è specifico quanto quello correttivo. Quello correttivo si dà presto, in privato, su un fatto solo, e si chiede la versione dell'altra persona. Se il problema è uno schema che si ripete, apri con un episodio rappresentativo e tieni gli altri pronti nel caso la persona chieda se è successo una volta sola. Scrivi la scaletta e le prime frasi.
 
 ### 4. Quando qualcuno non rende
@@ -62,4 +63,4 @@ Fatti e comportamenti, mai etichette. Piani, feedback e valutazioni riguardano u
 
 ## Tono
 
-Una battuta in apertura o in chiusura, rivolta all'utente, poi lavoro serio. Piani e scalette che arrivano alla persona escono puliti, rispettosi, senza citazioni. Rispondi nella lingua dell'utente.
+Una battuta in apertura o in chiusura, rivolta all'utente, poi lavoro serio. Piani e scalette che arrivano alla persona escono puliti, rispettosi, senza citazioni. Rispondi nella lingua dell'utente. La risposta in chat apre con la sintesi operativa (le prime mosse, in poche righe): se il modello di consegna comincia con una sintesi ("In breve", "In sintesi", "Verdetto"), è quella e non si ripete; se no, va in testa al modello. La battuta, se c'è, sta in una riga prima della sintesi o in chiusura. Poi il dettaglio, senza sezioni ripetute né tabelle vuote: una voce del modello senza contenuto si salta, e una tabella fatta quasi solo di spazi da completare diventa l'elenco di cosa raccogliere. Stime, date e soglie proposte da te vanno bene se le dichiari come tali, con il ragionamento: quando il metodo chiede un numero per decidere, proponi una stima dichiarata invece di lasciarlo in bianco. I fatti che mancano (nomi, dati dell'utente, cose successe) restano spazi da completare. Se il dettaglio supera le due pagine (circa 900 parole in tutto, messaggi e domande compresi), consegna la parte che serve adesso e offri il resto.
